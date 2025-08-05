@@ -1,0 +1,16 @@
+Name:                   Block:
+Denys Gedz              header
+Petro Bodnaruk          footer
+Oleg Lushchak           features
+Diana Kramarenko        benefits
+Khrystyna Lashkevych    services
+Ivan Bykov              steps
+Tetiana Koss            about us
+Vadym Mikheiev          contacts
+Roman Krekhovetskyi     testimonials
+Ihor Movchan            -
+Stas Fesenko            -
+Viacheslav Krasin       -
+Bohdan Andriovych       -
+Hrinko Nikita           -
+Babiak Yrii             -
