@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Denis -->
     <header class="header">
-        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.denis-header-nav.partial.html"
+      ></div>
     </header>
+    <section class="hero">
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.denis-home-hero.partial"
+      ></div>
+    </section>
+    <!-- Denis end-->
     <main class="main">
         
-    </main>
-    <footer class="footer">
-        <nav
+        <!--Oleh-->
+    <section
             data-hx-trigger="load"
             data-hx-swap="outerHTML"
-            data-hx-get="global.footer-nav.partial.html"
-        ></nav>
+            data-hx-get="index.features.partial.html"
+    ></section>
+        <!--Oleh end-->
+
+      <!-- Roman Krekhovetskyi -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.testimonials.partial.html"
+      ></section>
+      <!-- Roman Krekhovetskyi end -->
+
+    </main>
+    <footer class="footer">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer-nav.partial.html"
+      ></nav>
     </footer>
-</body>
+  </body>
 </html>
