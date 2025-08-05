@@ -1,34 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
     <!-- Denis -->
     <header class="header">
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.denis-header-nav.partial.html"
-      ></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.denis-header-nav.partial.html"></div>
     </header>
-    
-hello
-    <footer class="footer">
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"git pull
 
-        data-hx-get="global.footer-nav.partial.html"
-      ></nav>
+    <!-- <div>
+        <div>
+            <h1>Pricing</h1>
+            <p>Home ><span>Pricing</span> </p>
+        </div>
+    </div> -->
+    <div class="sections-with-prises">
+        <section class="first-sections-with-prises ">
+            <p><span>$200 </span> / per month</p>
+            <h2>Basic Plan</h2>
+            <p>Perfect for getting started with the cloud.</p>
+            <ul>
+                <li>
+                    10 GB of cloud storage;
+                </li>
+                <li>
+                    Basic cloud functions access;
+                </li>
+                <li>
+                    24/7 email support;
+                </li>
+                <li>
+                    Up to 20 users;
+                </li>
+                <li>
+                    Collaboration features.
+                </li>
+                <a href="#">Select Plan</a>
+            </ul>
+        </section>
+
+        <section class="second-sections-with-prises">
+            <p><span>$500 </span> / per month</p>
+            <h2>Premium Plan</h2>
+            <p>For those who need more capacities.</p>
+            <ul>
+                <li>
+                    50 GB of cloud storage;
+                </li>
+                <li>
+                    Pro cloud functions access;
+                </li>
+                <li>
+                    24/7 email support;
+                </li>
+                <li>
+                    Up to 50 users;
+                </li>
+                <li>
+                    Daily Backups.
+                </li>
+                <a href="#">Select Plan</a>
+            </ul>
+        </section>
+
+        <section class="third-sections-with-prises">
+            <p><span>$800 </span> / per month</p>
+            <h2>Entreprise Plan</h2>
+            <p>For big corporations and high loads.</p>
+            <ul>
+                <li>
+                    150 GB of cloud storage;
+                </li>
+                <li>
+                    Basic cloud functions access;
+                </li>
+                <li>
+                    Premium support;
+                </li>
+                <li>
+                    Up to 200 users;
+                </li>
+                <li>
+                    Daily Backups.
+                </li>
+                <a href="#">Select Plan</a>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <nav data-hx-trigger="load" data-hx-swap="outerHTML" git pull data-hx-get="global.footer-nav.partial.html">
+        </nav>
     </footer>
-  </body>
+</body>
+
 </html>
