@@ -12,39 +12,24 @@
     ></script>
   </head>
   <body>
-    <!-- Denis -->
     <header class="header">
-      <div
+      <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.denis-header-nav.partial.html"
-      ></div>
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="contacts.header-hero.partial.html"
+      ></section>
     </header>
-    <section class="hero">
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.denis-home-hero.partial"
-      ></div>
-    </section>
-    <!-- Denis end-->
     <main class="main">
-      <!--Lushchak-->
-      <section
+        <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.features.partial.html"
+        data-hx-get="contacts.main.info.partial.html"
       ></section>
-      <!--Lushchak end-->
-      
-      <!-- Ivan Bykov-->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.steps.partial.html"
-      ></section>
-      <!-- Ivan Bykov end-->
-       
     </main>
     <footer class="footer">
       <nav
@@ -55,4 +40,3 @@
     </footer>
   </body>
 </html>
->
