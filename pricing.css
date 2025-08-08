@@ -1,32 +1,44 @@
-/* *{
+.pricing__sections-place-with-itemas {
+  display: flex;
+}
 
-} */
- .pricing-hero{
+.pricing__plan {
+  padding: 15px;
+}
+
+.pricing-hero {
   width: 100%;
   height: 242px;
-background-image: url("img/pricing-img/heder-hero-fon.svg");
- background-repeat: no-repeat;
+  background-image: url("img/pricing-img/heder-hero-fon.svg");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
- }
- .pricing-hero__content{
+}
+
+.pricing-hero__content {
   display: flex;
-  padding: 70px;
-/* align-items: center; */
+  /* padding: 70px; */
+  align-items: center;
   justify-content: center;
- }
+  flex-direction: column;
+}
+
 .pricing-hero,
 .pricing__sections {
+
   max-width: 1170px;
-  margin: 0 auto; 
-background-color:#0c1020;
-color: #f7fbff;
-text-decoration: none;
+  margin: 0 auto;
+  background-color: #0c1020;
+  color: #f7fbff;
+  text-decoration: none;
+  padding: 90px 30px;
 }
 
 .pricing__sections {
   display: flex;
+  justify-content: center;
+
 }
 
 .pricing__plan {
