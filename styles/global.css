@@ -15,6 +15,10 @@
     font-family: "Space Grotesk", sans-serif;
 }
 
+body {
+    background-color: var(--background-color);
+}
+
 img {
     display: block;
     width: 100%;
