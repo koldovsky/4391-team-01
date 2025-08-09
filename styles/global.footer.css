@@ -13,12 +13,35 @@ footer {
 }
 
 .footer__container {
+    display: flex;
+    /*gap: 1px;*/
+    /*flex-wrap: wrap;        !* щоб колонки переносилися *!*/
+    justify-content: space-between;
+
 
     padding: 0;
-    display: flex;
     margin: auto;
     max-width: 1220px;
 }
+
+.footer__container > div {
+    flex: 0 1 23%;   /* ширина ~ 23%, дозволяє 4 колонки в ряд з відступами */
+    min-width: 250px; /* не дасть колонкам ставати дуже вузькими */
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .footer__container {
+        flex-direction: column;
+        align-content: center;
+
+    }
+    .footer__container > div {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+}
+
 h3 {
     margin-top: 0;
     color: rgb(255, 255, 255);
@@ -46,31 +69,33 @@ h3 {
 }
 
 .footer-column__logo {
-    width: 30%;
     text-align: left;
+    padding: 10px;
 }
 
 .footer-column__navigation {
     text-align: left;
-    width: 20%;
     padding-left: 10px;
 }
 
 .footer-column__contact {
     text-align: left;
-    width: 25%;
-    padding-left: 10px;
+    padding: 10px;
 }
 
 .footer-column__newsletter {
     text-align: left;
-    width: 25%;
-    padding-left: 10px;
+    padding: 10px;
 }
 
-.footer-contacts__container {
-    padding: 0;
+.footer-column__contacts {
+    padding: 10px;
     text-decoration: none;
+}
+
+.footer__logo {
+    width: 162px;
+    height: auto;
 }
 
 .mailto {
@@ -78,8 +103,8 @@ h3 {
 }
 
 .footer__phone {
-    text-align: left;
-    width: 25%;
+    /*text-align: left;*/
+    text-decoration: none;
     font-size: 24px;
     color: rgb(58, 157, 208);
 }
