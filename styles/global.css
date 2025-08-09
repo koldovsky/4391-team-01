@@ -9,6 +9,9 @@
 }
 
 :root {
+    --primary-color: #ffffff;
+    --secondary-color: #cd373a;
+    --text-color:rgba(255, 255, 255, 0.69);
     --background-color: #0c1020;
     --accent-color: #3a9dd0;
     scroll-behavior: smooth;
@@ -22,4 +25,13 @@ body {
 img {
     display: block;
     width: 100%;
+}
+
+/* container settings */
+.container {
+    padding: 0 20px;
+    .container-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
