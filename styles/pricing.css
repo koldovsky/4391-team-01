@@ -1,4 +1,45 @@
-.pricing__sections-place-with-itemas {
+.pricing-hero {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 230px;
+  width: 320px;
+  padding: 70px;
+  background-image: url("../img/pricing-img/heder-hero-fon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .pricing-hero__content {
+    .pricing-hero__title {
+      color: var(--accent-color);
+      font-size: 34px;
+    }
+
+    ;
+
+    .pricing-hero__breadcrumb-current {
+      color: var(--text-color-secondary);
+
+    }
+
+    .pricing-hero__breadcrumb-current::after {
+      content: " ›";
+    }
+
+    .pricing-hero__breadcrumb-link {
+      color: var(--primary-color);
+    }
+
+    ;
+    ;
+  }
+
+  ;
+
+}
+
+/* .pricing__sections-place-with-itemas {
   display: flex;
 }
 
@@ -43,4 +84,4 @@
 .pricing__plan {
   background-color: #0a0e1b;
 
-}
+} */

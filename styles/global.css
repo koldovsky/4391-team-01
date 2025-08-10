@@ -12,6 +12,7 @@
     --primary-color: #ffffff;
     --secondary-color: #cd373a;
     --text-color:rgba(255, 255, 255, 0.69);
+    --text-color-secondary:#939297;
     --background-color: #0c1020;
     --accent-color: #3a9dd0;
     scroll-behavior: smooth;
