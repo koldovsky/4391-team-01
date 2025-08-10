@@ -2,7 +2,6 @@
   padding: 0px 20px;
 
   .testimonials__content {
-    background-color: var(--color-bg);
     padding: 45px 0px 90px;
     .testimonials__intro {
       .testimonials__title {
