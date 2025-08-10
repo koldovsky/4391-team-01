@@ -9,29 +9,23 @@
 }
 
 :root {
-  --primary-color: #ffffff;
-  --secondary-color: #cd373a;
-  --text-color: rgba(255, 255, 255, 0.69);
-  --background-color: #0c1020;
-  --accent-color: #3a9dd0;
+  --color-bg: #0c1020; /* основий  фон*/
+  --colorr-article-bg: #090c18;
+  --color-accent-primary: #3a9dd0; /* Головний бренд-акцент */
+  --color-accent-secondary: #cd373a; /* Кнопки та виділення тексту */
+  --color-secondary: #0b68b8; /* Другорядний синій */
+  --color-text-muted: #b8b8b8; /* Другорядний текст */
+  --color-text-light: #ffffff; /* Світлий текст */
+  --color-divider: #b8b8b817;
   scroll-behavior: smooth;
   font-family: "Space Grotesk", sans-serif;
 }
 
 body {
-  background-color: var(--background-color);
+    background-color: var(--color-bg);
 }
 
 img {
   display: block;
   width: 100%;
-}
-
-/* container settings */
-.container {
-  padding: 0 20px;
-  .container-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
 }

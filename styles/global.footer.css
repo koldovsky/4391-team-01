@@ -27,6 +27,11 @@ footer {
     .footer__logo {
         margin: auto !important;
     }
+
+    .social__icons {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .footer__container {
@@ -127,4 +132,17 @@ h3 {
 .footer__underline {
     width: 100%;
     height: 31px;
+}
+
+.social__icons {
+    padding: 20px 0;
+    display: flex;
+}
+
+.social_icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 15px;
+    background-color: #0B67B8;
+    border-radius: 8px;
 }
