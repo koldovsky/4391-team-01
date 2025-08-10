@@ -8,38 +8,40 @@
 
 footer {
     background-color: rgb(10, 14, 27);
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+}
+
+@media (max-width: 767px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer__column {
+        margin-top: 16px;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .footer__logo {
+        margin: auto !important;
+    }
 }
 
 .footer__container {
     display: flex;
-    /*gap: 1px;*/
-    /*flex-wrap: wrap;        !* щоб колонки переносилися *!*/
+    gap: 1px;
+    flex-wrap: wrap; /* щоб колонки переносилися */
     justify-content: space-between;
-
-
     padding: 0;
     margin: auto;
     max-width: 1220px;
 }
 
 .footer__container > div {
-    flex: 0 1 23%;   /* ширина ~ 23%, дозволяє 4 колонки в ряд з відступами */
-    min-width: 250px; /* не дасть колонкам ставати дуже вузькими */
+    flex: 0 1 23%;
     box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-    .footer__container {
-        flex-direction: column;
-        align-content: center;
-
-    }
-    .footer__container > div {
-        flex: 1 1 100%;
-        min-width: 100%;
-    }
 }
 
 h3 {
@@ -48,49 +50,58 @@ h3 {
     padding-bottom: 12px;
 }
 
-.footer-text {
+.footer__text {
     color: rgb(164, 164, 166);
     padding-top: 12px;
 }
 
-.footer-link {
+.footer__link {
     list-style: none;
     color: #B8B8B8;
     padding-top: 5px;
 }
-.footer-link a{
+
+.footer__link a {
     list-style: none;
     color: #B8B8B8;
     text-decoration: none;
 }
 
-.footer-links__container{
+.footer__links {
     padding: 0;
 }
 
 .footer-column__logo {
     text-align: left;
-    padding: 10px;
+    /*padding: 8px;*/
+    width: auto;
+    max-width: 220px;
 }
 
 .footer-column__navigation {
     text-align: left;
-    padding-left: 10px;
+    /*padding: 8px;*/
+    width: auto;
+    max-width: 100px;
 }
 
-.footer-column__contact {
+.footer-column__contacts {
     text-align: left;
-    padding: 10px;
+    /*padding: 8px;*/
+    width: auto;
+    max-width: 28%;
 }
 
 .footer-column__newsletter {
     text-align: left;
-    padding: 10px;
+    /*padding: 8px;*/
+    width: auto;
+
 }
 
-.footer-column__contacts {
-    padding: 10px;
-    text-decoration: none;
+.footer__contacts {
+    padding: 8px;
+    list-style: none;
 }
 
 .footer__logo {
@@ -98,18 +109,18 @@ h3 {
     height: auto;
 }
 
-.mailto {
+.footer__contact-link--email {
     text-align: left;
 }
 
-.footer__phone {
+.footer__contact-link--phone {
     /*text-align: left;*/
-    text-decoration: none;
+    /*text-decoration: none;*/
     font-size: 24px;
     color: rgb(58, 157, 208);
 }
 
-.stay-in-touch__link {
+.footer__contact-link--touch {
     padding-top: 5px;
 }
 
