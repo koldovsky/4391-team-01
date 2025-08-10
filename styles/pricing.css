@@ -9,79 +9,21 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  .pricing-hero__content {
-    .pricing-hero__title {
-      color: var(--accent-color);
-      font-size: 34px;
-    }
-
-    ;
-
-    .pricing-hero__breadcrumb-current {
-      color: var(--text-color-secondary);
-
-    }
-
-    .pricing-hero__breadcrumb-current::after {
-      content: " ›";
-    }
-
-    .pricing-hero__breadcrumb-link {
-      color: var(--primary-color);
-    }
-
-    ;
-    ;
-  }
-
-  ;
-
 }
 
-/* .pricing__sections-place-with-itemas {
-  display: flex;
+.pricing-hero__title {
+  color: var(--accent-color);
+  font-size: 34px;
 }
 
-.pricing__plan {
-  padding: 15px;
+.pricing-hero__breadcrumb-current {
+  color: var(--text-color-secondary);
 }
 
-.pricing-hero {
-  width: 100%;
-  height: 242px;
-  background-image: url("img/pricing-img/heder-hero-fon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
+.pricing-hero__breadcrumb-current::after {
+  content: " ›";
 }
 
-.pricing-hero__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.pricing-hero__breadcrumb-link {
+  color: var(--primary-color);
 }
-
-.pricing-hero,
-.pricing__sections {
-
-  max-width: 1170px;
-  margin: 0 auto;
-  background-color: #0c1020;
-  color: #f7fbff;
-  text-decoration: none;
-  padding: 90px 30px;
-}
-
-.pricing__sections {
-  display: flex;
-  justify-content: center;
-
-}
-
-.pricing__plan {
-  background-color: #0a0e1b;
-
-} */
