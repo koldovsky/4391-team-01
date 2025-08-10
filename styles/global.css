@@ -1,21 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --background-color: #0c1020;
-    --accent-color: #3a9dd0;
-    scroll-behavior: smooth;
-    font-family: "Space Grotesk", sans-serif;
+  --color-bg: #0c1020; /* основий  фон*/
+  --colorr-article-bg: #090c18;
+  --color-accent-primary: #3a9dd0; /* Головний бренд-акцент */
+  --color-accent-secondary: #cd373a; /* Кнопки та виділення тексту */
+  --color-secondary: #0b68b8; /* Другорядний синій */
+  --color-text-muted: #b8b8b8; /* Другорядний текст */
+  --color-text-light: #ffffff; /* Світлий текст */
+  --color-divider: #b8b8b817;
+  scroll-behavior: smooth;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
