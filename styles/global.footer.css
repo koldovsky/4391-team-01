@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: rgb(10, 14, 27);
+    padding: 20px;
+}
+
+@media (max-width: 767px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer__column {
+        margin-top: 16px;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .footer__logo {
+        margin: auto !important;
+    }
+}
+
+.footer__container {
+    display: flex;
+    gap: 1px;
+    flex-wrap: wrap; /* щоб колонки переносилися */
+    justify-content: space-between;
+    padding: 0;
+    margin: auto;
+    max-width: 1220px;
+}
+
+.footer__container > div {
+    flex: 0 1 23%;
+    box-sizing: border-box;
+}
+
+h3 {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    padding-bottom: 12px;
+}
+
+.footer__text {
+    color: rgb(164, 164, 166);
+    padding-top: 12px;
+}
+
+.footer__link {
+    list-style: none;
+    color: #B8B8B8;
+    padding-top: 5px;
+}
+
+.footer__link a {
+    list-style: none;
+    color: #B8B8B8;
+    text-decoration: none;
+}
+
+.footer__links {
+    padding: 0;
+}
+
+.footer-column__logo {
+    text-align: left;
+    /*padding: 8px;*/
+    width: auto;
+    max-width: 220px;
+}
+
+.footer-column__navigation {
+    text-align: left;
+    /*padding: 8px;*/
+    width: auto;
+    max-width: 100px;
+}
+
+.footer-column__contacts {
+    text-align: left;
+    /*padding: 8px;*/
+    width: auto;
+    max-width: 28%;
+}
+
+.footer-column__newsletter {
+    text-align: left;
+    /*padding: 8px;*/
+    width: auto;
+
+}
+
+.footer__contacts {
+    padding: 8px;
+    list-style: none;
+}
+
+.footer__logo {
+    width: 162px;
+    height: auto;
+}
+
+.footer__contact-link--email {
+    text-align: left;
+}
+
+.footer__contact-link--phone {
+    /*text-align: left;*/
+    /*text-decoration: none;*/
+    font-size: 24px;
+    color: rgb(58, 157, 208);
+}
+
+.footer__contact-link--touch {
+    padding-top: 5px;
+}
+
+.footer__underline {
+    width: 100%;
+    height: 31px;
+}

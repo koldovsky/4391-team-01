@@ -1,0 +1,29 @@
+.pricing-hero {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 230px;
+  width: 320px;
+  padding: 70px;
+  background-image: url("../img/pricing-img/heder-hero-fon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pricing-hero__title {
+  color: var(--accent-color);
+  font-size: 34px;
+}
+
+.pricing-hero__breadcrumb-current {
+  color: var(--text-color-secondary);
+}
+
+.pricing-hero__breadcrumb-current::after {
+  content: " ›";
+}
+
+.pricing-hero__breadcrumb-link {
+  color: var(--primary-color);
+}
