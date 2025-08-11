@@ -1,6 +1,8 @@
 <!--Bohdan-->
 <section class="our-story">
-  <h2 class="our-story__heading"><span class="our-story__tag">-our story-</span></h2>
+  <h2 class="our-story__head">
+    <span class="our-story__tag">-our story-</span>
+  </h2>
 
   <div class="our-story__heading">
     <p class="our-story__lead">
@@ -14,12 +16,7 @@
     </p>
   </div>
 
-
-
-
-<ul class="feature-card-list">
-
-
+  <ul class="feature-card-list">
     <li class="feature-card feature-card--blue">
       <img
         src="img/about-us/our-story/check-mark--blue.svg"
@@ -92,65 +89,87 @@
         case one server fails.
       </p>
     </li>
-</ul>
-
-
-
-
+  </ul>
 
   <div class="process-overview">
-    <img
-      src="img/about-us/our-story/about-men-photo.png"
-      alt="photo with men"
-    />
-    <p id="process-overview.self-ad">
+    <figure class="process-overview__figure">
+      <img
+        src="img/about-us/our-story/about-men-photo.png"
+        alt="photo with men"
+      />
+    </figure>
+    <p class="process-overview__intro">
       If you are interested in our services, here's how the whole journey looks
       like. Our managers will take care of your business and guide it through
       the process.
     </p>
-    <ol id="process-overview.enum">
-      <li>Assessment</li>
-      <li>Migration</li>
-      <li>Integration</li>
-      <li>Optimization</li>
+    <ol class="process-overview__steps">
+      <li class="process-overview__step">Assessment</li>
+      <li class="process-overview__step">Migration</li>
+      <li class="process-overview__step">Integration</li>
+      <li class="process-overview__step">Optimization</li>
     </ol>
-    <hr />
   </div>
 
-  <div class="types-of-cloud">
-    <h2>Types of Cloud Computing:</h2>
-    <div class="accordions">
-      <article class="accordion-card">
+  <hr class="our-story__divider" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="clouds-types">  
+    <h3 class="clouds-types__heading">Types of Cloud Computing:</h3>
+    <ul class="accordion-list">
+      <li class="accordion">
         <img
           src="img/about-us/our-story/accordions-logo1.svg"
-          alt="one-of-logos"
+          alt="logo"
         />
         <p>Software as a Service <span>(SaaS)</span></p>
-        <button class="accordion1"></button>
-      </article>
+        <button class="accordion-button">Read More</button>
+      </li>
 
-      <article class="accordion-card">
+      <li class="accordion">
         <img
           src="img/about-us/our-story/accordions-logo2.svg"
-          alt="one-of-logos"
+          alt="logo"
         />
         <p>Software as a Service <span>(SaaS)</span></p>
-        <button class="accordion1"></button>
-      </article>
+        <button class="accordion-button">Read More</button>
+      </li>
 
-      <article class="accordion-card">
+      <li class="accordion">
         <img
           src="img/about-us/our-story/accordion-logo3.svg"
-          alt="one-of-logos"
+          alt="logo"
         />
         <p>Software as a Service <span>(SaaS)</span></p>
-        <button class="accordion1"></button>
-      </article>
-    </div>
-    <article class="link-card">
-      <h3>Want to Work With Us?</h3>
-      <p>Get access to the free trial now!</p>
-      <a href="contacts.html"><p>Let's Go!</p></a>
+        <button class="accordion-button">Read More</button>
+      </li>
+    </ul>
+
+
+
+
+
+
+
+    <article class="cta-card">
+      <h4 class="cta-card__title">Want to Work With Us?</h3>
+      <p class="cta-card__text">Get access to the free trial now!</p>
+      <a class = "cta-card__link" href="contacts.html"><p>Let's Go!</p></a>
     </article>
   </div>
 </section>
