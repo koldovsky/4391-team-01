@@ -51,6 +51,7 @@ img {
     padding: 12px 19px;
     border-radius: 5px;
     border: 1px solid;
+    transition: 0.3s;
     border-color: #ffffff;
     &:hover {
         background-color: #ffffff;
