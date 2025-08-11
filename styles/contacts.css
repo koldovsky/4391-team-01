@@ -1,0 +1,83 @@
+.contacts-hero {
+  background-image: url("../img/pricing-img/heder-hero-fon.svg");
+  background-size: cover;
+  background-position: center;
+  max-width: 1200px;
+  margin: auto;
+
+  @media (max-width: 767px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: 991px) and (min-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .contacts-hero__title {
+    color: var(--accent-color);
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.125em;
+  }
+
+  .contacts-hero__breadcrumb {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-color);
+
+    .contacts-hero__breadcrumb-link {
+      text-decoration: none;
+      color: var(--text-color);
+    }
+
+    .contacts-hero__breadcrumb-current {
+      text-decoration: underline;
+      color: var(--primary-color);
+    }
+  }
+}
+
+.contacts-info {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  text-decoration: none;
+  text-align: left;
+  padding-top: 90px;
+  padding-bottom: 45px;
+
+  /* @media (min-width: 400px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  } */
+
+  .contacts-info__title {
+    color: var(--accent-color);
+    font-size: 12px;
+  }
+
+  .contacts-info__subtitle {
+    color: var(--primary-color);
+    font-size: 38px;
+    font-weight: bold;
+    display: block;
+  }
+
+  .contacts-info__description {
+    color: var(--text-color);
+    font-size: 17px;
+    display: block;
+  }
+
+  .contacts-info__link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 17px;
+    display: block;
+  }
+}
