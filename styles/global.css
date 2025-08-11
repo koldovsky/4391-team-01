@@ -19,6 +19,9 @@
   --color-divider: #b8b8b817;
   scroll-behavior: smooth;
   font-family: "Space Grotesk", sans-serif;
+    /* FONTS */
+  --font-size-small: 15px;
+  --line-height-small: 1.2em;
 }
 
 body {
