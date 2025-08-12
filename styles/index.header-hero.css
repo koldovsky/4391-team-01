@@ -1,0 +1,40 @@
+.home-hero__container {
+  background-image: url(../img/testimonials/cover-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container-inner {
+    padding: 220px 0 120px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__text {
+    .hero__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 725px;
+      .hero__title-subtitle {
+        color: var(--color-accent-primary);
+        font-size: 12px;
+        line-height: 1.2em;
+        letter-spacing: 2.4px;
+        text-align: center;
+      }
+      .hero__title-heading {
+        margin-top: 20px;
+        font-size: 60px;
+        color: #ffffff;
+        line-height: 1.05em;
+        text-align: center;
+      }
+      .hero__title-text {
+        max-width: 567px;
+        margin-top: 50px;
+        text-align: center;
+        line-height: 1.5em;
+      }
+    }
+  }
+}
