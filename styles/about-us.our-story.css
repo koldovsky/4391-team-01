@@ -8,3 +8,10 @@
     font-size: 14px;
     text-transform: lowercase;
 }
+
+
+  .our-story__brand{
+    color: var(--color-accent-secondary);
+    font-weight: bold;
+  }
+
