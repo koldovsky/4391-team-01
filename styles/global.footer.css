@@ -1,3 +1,16 @@
+:root {
+    --color-footer-bg: rgb(10, 14, 27);
+    --color-heading: rgb(255, 255, 255);
+    --color-text: rgb(164, 164, 166);
+    --button-color: #fff;
+    --color-link: #B8B8B8;
+    --color-phone: rgb(58, 157, 208);
+    --color-social-icon-bg: #0B67B8;
+    --color-subscribe-newsletter-bg: rgb(205, 55, 57);
+    --color-subscribe-newsletter-bg-hover: rgb(13, 89, 159);
+    --color-email-link: rgb(184, 184, 184);
+}
+
 *,
 *::after,
 *::before {
@@ -7,88 +20,181 @@
 }
 
 footer {
-    background-color: rgb(10, 14, 27);
-    padding: 0;
-    margin: 0;
+    background-color: var(--color-footer-bg);
+    padding: 20px;
 }
 
 .footer__container {
-
-    padding: 0;
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1280px;
     margin: auto;
-    max-width: 1220px;
 }
+
+.footer__container > div:nth-child(1) {
+    flex: 0 0 35%;
+}
+
+.footer__container > div:nth-child(2) {
+    flex: 0 0 15%;
+}
+
+.footer__container > div:nth-child(3) {
+    flex: 0 0 25%;
+}
+
+.footer__container > div:nth-child(4) {
+    flex: 0 0 25%;
+}
+
+.footer__column {
+    margin: 0;
+    padding: 5px;
+}
+
 h3 {
     margin-top: 0;
-    color: rgb(255, 255, 255);
+    color: var(--color-heading);
     padding-bottom: 12px;
+    font-size: 23px;
 }
 
-.footer-text {
-    color: rgb(164, 164, 166);
+.footer__text {
+    color: var(--color-text);
     padding-top: 12px;
 }
 
-.footer-link {
+.footer__link {
     list-style: none;
-    color: #B8B8B8;
+    color: var(--color-link);
     padding-top: 5px;
 }
-.footer-link a{
+
+.footer__link a {
     list-style: none;
-    color: #B8B8B8;
+    color: var(--color-link);
     text-decoration: none;
 }
 
-.footer-links__container{
+.footer__links {
     padding: 0;
 }
 
-.footer-column__logo {
-    width: 30%;
-    text-align: left;
-}
-
-.footer-column__navigation {
-    text-align: left;
-    width: 20%;
-    padding-left: 10px;
-}
-
-.footer-column__contact {
-    text-align: left;
-    width: 25%;
-    padding-left: 10px;
-}
-
+.footer-column__logo,
+.footer-column__navigation,
+.footer-column__contacts,
 .footer-column__newsletter {
     text-align: left;
-    width: 25%;
-    padding-left: 10px;
 }
 
-.footer-contacts__container {
-    padding: 0;
+.footer__contacts {
+    list-style: none;
+}
+
+.footer__logo {
+    width: 162px;
+    height: auto;
+}
+
+.footer__contact-link--email,
+.footer__contact-link--email:link,
+.footer__contact-link--email:visited,
+.footer__contact-link--email:hover,
+.footer__contact-link--email:active {
     text-decoration: none;
-}
-
-.mailto {
     text-align: left;
+    color: var(--color-email-link);
 }
 
-.footer__phone {
-    text-align: left;
-    width: 25%;
-    font-size: 24px;
-    color: rgb(58, 157, 208);
+.footer__contact-link--phone,
+.footer__contact-link--phone:link,
+.footer__contact-link--phone:visited,
+.footer__contact-link--phone:hover,
+.footer__contact-link--phone:active {
+    text-decoration: none;
+    font-size: 23px;
+    color: var(--color-phone);
+    text-decoration-color: var(--color-phone);
 }
 
-.stay-in-touch__link {
+.footer__contact-link--touch {
     padding-top: 5px;
 }
 
 .footer__underline {
     width: 100%;
-    height: 31px;
+    height: 20px;
+}
+
+.social__icons {
+    padding: 20px 0;
+    display: flex;
+}
+
+.social_icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 15px;
+    background-color: var(--color-social-icon-bg);
+    border-radius: 8px;
+}
+
+.footer__input,
+.footer__button {
+    display: block;
+    width: 65%;
+    color: var(--button-color);
+    box-sizing: border-box;
+    padding: 11px 19px;
+    border-radius: 8px;
+}
+
+.footer__input {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.footer__button {
+    border: none;
+    background-color: var(--color-subscribe-newsletter-bg);
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none; /* remove link underline */
+    color: inherit; /* match surrounding text color */
+}
+
+.footer__button:hover {
+    background-color: var(--color-subscribe-newsletter-bg-hover, #333); /* запасний колір, якщо змінної немає */
+    transform: scale(1.05);
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer__container > div {
+        flex: 0 0 100%;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .footer__column {
+        margin-top: 16px;
+    }
+
+    .footer__logo {
+        margin: auto !important;
+    }
+
+    .social__icons {
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -8,7 +8,7 @@ Ivan Bykov              steps
 Tetiana Koss            about us
 Vadym Mikheiev          contacts
 Roman Krekhovetskyi     testimonials
-Ihor Movchan            -
+Ihor Movchan            faq
 Stas Fesenko            -
 Viacheslav Krasin       -
 Bohdan Andriovych       -

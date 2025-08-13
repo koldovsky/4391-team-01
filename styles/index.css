@@ -1,3 +1,9 @@
 @import url(global.footer.css);
 @import url(global.css);
 @import url(index.steps.css);
+@import url(global.header-nav.css);
+@import url(index.header-hero.css);
+@import url(index.features.css);
+@import url(index.benefits.css);
+@import url(index.testimonials.css);
+@import url(global.footer.css);
