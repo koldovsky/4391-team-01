@@ -1,6 +1,6 @@
 <!-- Roman Krekhovetskyi -->
 <section id="testimonials" class="testimonials">
-  <div class="testimonials__content">
+  <div class="testimonials__content container">
     <div class="testimonials__intro">
       <h2 class="testimonials__title">- testimonials -</h2>
       <p class="testimonials__subtitle">Success Stories</p>
@@ -8,7 +8,6 @@
         We have cooperated with 300+ clients, from small startups to Fortune 500
         corporations.
       </p>
-      <!-- move style to css file from testimonials__divider -->
       <div class="testimonials__divider"></div>
       <div class="testimonials__stats">
         <div class="testimonials__stat">
@@ -22,7 +21,6 @@
       </div>
     </div>
     <div class="testimonials__carousel">
-      <!-- TODO: Remove width from svg and button -->
       <button
         type="button"
         class="testimonials__arrow testimonials__arrow--prev"
@@ -77,12 +75,14 @@
           </p>
           <div class="testimonials__author-box">
             <img
-              class="testimonials__avatar"
+              class="testimonials__avatar avatar-jack-chestain"
               src="img/testimonials/avatar-jack-chestain.png"
               alt="Jack Chestain"
             />
-            <p class="testimonials__author">Jack Chestain</p>
-            <p class="testimonials__position">SaaS Company</p>
+            <div class="testimonials__author-info">
+              <p class="testimonials__author">Jack Chestain</p>
+              <p class="testimonials__position">SaaS Company</p>
+            </div>
           </div>
         </div>
       </article>
@@ -126,8 +126,10 @@
               src="img/testimonials/avatar-susan-welsh.png"
               alt="Susan Welsh"
             />
-            <p class="testimonials__author">Susan Welsh</p>
-            <p class="testimonials__position">Outsourcing company</p>
+            <div class="testimonials__author-info">
+              <p class="testimonials__author">Susan Welsh</p>
+              <p class="testimonials__position">Outsourcing company</p>
+            </div>
           </div>
         </div>
       </article>
@@ -171,8 +173,10 @@
               src="img/testimonials/avatar-eric-roberts.png"
               alt="Eric Roberts"
             />
-            <p class="testimonials__author">Eric Roberts</p>
-            <p class="testimonials__position">Healthcare Field</p>
+            <div class="testimonials__author-info">
+              <p class="testimonials__author">Eric Roberts</p>
+              <p class="testimonials__position">Healthcare Field</p>
+            </div>
           </div>
         </div>
       </article>
@@ -197,18 +201,26 @@
     </div>
   </div>
   <div class="testimonials__cta">
-    <p class="testimonials__cta-highlight">
-      First 14 Days Are!<span class="testimonials__cta-highlighted">Free!</span>
-    </p>
-    <p class="testimonials__cta-subtitle">Go Ahead and Try!</p>
-    <p class="testimonials__cta-description">
-      Take advantage of cloud solutions! Get a free demo for 14 days and explore
-      the new horizons cloud services offer to you.
-    </p>
-    <div class="testimonials__cta-action">
-      <a class="testimonials__cta-button" href="contacts.html" target="_blank">
-        <span testimonials__cta-button-text>Sign Up</span>
-      </a>
+    <div class="testimonials__cta-content">
+      <p class="testimonials__cta-highlight">
+        First 14 Days Are
+        <span class="testimonials__cta-highlighted">Free!</span>
+      </p>
+      <p class="testimonials__cta-subtitle">Go Ahead and Try!</p>
+      <p class="testimonials__cta-description">
+        Take advantage of cloud solutions! Get a free demo for 14 days and
+        explore the new horizons cloud services offer to you.
+      </p>
+      <div class="testimonials__cta-action">
+        
+        <a
+          class="testimonials__cta-button"
+          href="contacts.html"
+          target="_blank"
+        >
+          Sign Up
+        </a>
+      </div>
     </div>
     <img
       class="testimonials__cta-image"

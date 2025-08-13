@@ -1,40 +1,39 @@
 .contacts-hero {
   background-image: url("../img/pricing-img/heder-hero-fon.svg");
   background-size: cover;
-  background-position: center;
-  max-width: 1200px;
-  margin: auto;
+  background-position: relative;
+  padding: 70px 0;
+  width: 100%;
 
-  @media (max-width: 767px) {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
+  .contacts-hero__container {
+    height: 96px;
 
-  @media (max-width: 991px) and (min-width: 768px) {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .contacts-hero__title {
-    color: var(--color-accent-primary);
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.125em;
-  }
-
-  .contacts-hero__breadcrumb {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 0.875rem;
-    color: var( --color-text-light);
-
-    .contacts-hero__breadcrumb-link {
-      text-decoration: none;
-      color: var(--color-text-muted);
+    .contacts-hero__title {
+      color: var(--color-accent-primary);
+      text-align: center;
+      font-weight: bold;
+      font-size: 2.125em;
+      line-height: 49px;
     }
 
-    .contacts-hero__breadcrumb-current {
-      text-decoration: underline;
-      color: var(--primary-color);
+    .contacts-hero__breadcrumb {
+      display: block;
+      line-height: 47px;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--color-text-light);
+
+      .contacts-hero__breadcrumb-link {
+        line-height: 21px;
+        text-decoration: none;
+        color: var(--color-text-muted);
+      }
+
+      .contacts-hero__breadcrumb-current {
+        line-height: 21px;
+        text-decoration: underline;
+        color: var(--primary-color);
+      }
     }
   }
 }
