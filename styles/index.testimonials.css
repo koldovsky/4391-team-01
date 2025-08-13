@@ -84,6 +84,7 @@
           .testimonials__author-box {
             margin-top: 20px;
             padding: 7.5px 0;
+            display: flex;
             .testimonials__avatar {
               flex-shrink: 0;
               width: 70px;
@@ -91,15 +92,24 @@
               object-fit: cover;
               object-position: center 30%;
               border-radius: 50%;
+              justify-self: center;
             }
             .avatar-jack-chestain {
               object-position: center 10%;
             }
-            .testimonials__author {
-              color: var(--color-text-light);
-            }
-            .testimonials__position {
-              color: var(--color-text-muted);
+            .testimonials__author-info {
+              display: flex;
+              flex-direction: column;
+              margin-left: 5px;
+              .testimonials__author {
+                color: var(--color-text-light);
+                font-size: 22px;
+                font-weight: bold;
+              }
+              .testimonials__position {
+                color: var(--color-text-muted);
+                font-size: 14px;
+              }
             }
           }
         }
@@ -140,23 +150,28 @@
         font-size: 17px;
         margin-top: 35px;
       }
-      .testimonials__cta-button {
-        margin-top: 35px;
-        padding: 15px 30px;
-        background-color: var(--color-accent-secondary);
-        color: var(--color-text-light);
-        font-size: 17px;
-        font-weight: bold;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-        &:hover {
-          background-color: var(--color-accent-primary);
+      .testimonials__cta-action {
+        display: flex;
+        justify-content: flex-start; 
+        margin-top: 35px; 
+        .testimonials__cta-button {
+          padding: 15px 30px;
+          background-color: var(--color-accent-secondary);
+          color: var(--color-text-light);
+          font-size: 17px;
+          font-weight: bold;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+          &:hover {
+            background-color: var(--color-accent-primary);
+          }
         }
       }
     }
     .testimonials__cta-image {
       width: 100%;
+      margin-top: 100px;
     }
   }
 }
