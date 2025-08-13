@@ -1,4 +1,5 @@
-/* === BENEFITS (2 колонки) === */
+/* Diana Kramarenko */
+
 .benefits {
   display: grid;
   grid-template-columns: 1fr;
@@ -30,19 +31,19 @@
   font-size: 24px;
 }
 
-/* Акордеон */
 .benefits__accordion {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 20px;
+  width: 100%;
 }
 
 .accordion__item {
   background-color: var(--colorr-article-bg);
   border: 2px solid var(--color-divider);
   border-radius: 20px;
-  padding: 30px;
+  padding: 20px;
   transition: all 0.3s ease;
 }
 
@@ -82,7 +83,7 @@
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Карусель */
+/* Решта стилів залишаються без змін */
 .photo__carousel {
   position: relative;
   max-width: 1200px;
@@ -140,7 +141,6 @@
   right: 10px;
 }
 
-/* Адаптивність */
 @media (min-width: 767px) {
   .carousel__item {
     flex: 0 0 calc(50% - 10px);
