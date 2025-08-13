@@ -110,8 +110,6 @@
 }
 
 .carousel__item img {
-  width: 360px;
-  height: 240px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -149,7 +147,7 @@
 
 @media (min-width: 990px) {
   .benefits {
-    grid-template-columns: 370px 720px;
+    grid-template-columns: 4fr 6fr;
   }
   
   .carousel__item {
