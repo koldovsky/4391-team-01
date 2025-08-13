@@ -1,0 +1,10 @@
+.our-story{
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+.our-story__tag{
+    color: var(--color-accent-primary) ;
+    font-size: 14px;
+    text-transform: lowercase;
+}
