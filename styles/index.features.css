@@ -11,14 +11,14 @@
 
 .features__main {
   flex: 1;
-  max-width: 600px;
-  
+  max-width: 650px;
+
   .features__text {
     color: #3a9dd0;
     font-size: 12px;
   }
   .features__title {
-    margin: 40px 0;
+    margin: 25px 50px 40px 0;
     color: #ffffff;
     font-size: 42px;
   }
@@ -64,10 +64,11 @@
     width: 70px;
     height: auto;
     padding-bottom: 20px;
-    .content__title {
-      color: #ffffff;
-      font-size: 22px;
-    }
+  }
+  .content__title {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
   }
   .content__text {
     color: #b8b8b8;
