@@ -1,79 +1,94 @@
 .pricing {
-  padding: 90px 30px;
-  width: 320px;
+  padding: 90px 30px 0px 30px;
+
   color: var(--color-text-light);
+}
 
-  .pricing__price-muted {
-    color: var(--color-text-muted);
-  }
+.pricing__price-muted {
+  color: var(--color-text-muted);
+}
 
-  ;
+.pricing__plan {
+  /* border: 1px solid var(--color-text-muted); */
+  border: 1px solid color-mix(in srgb, var(--color-text-muted) 50%, transparent);
+  box-shadow: 0 0 0 1px transparent;
+  border-radius: 10px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  padding: 30px;
+}
 
-  .pricing__plan {
-    padding: 0px 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    background-color: #0b0f1a;
-    width: 300px;
-    box-shadow: 0 0 0 1px transparent;
-
-  }
-
-  ;
-  .pricing__price {
+.pricing__price {
   font-weight: 800;
   font-size: 28px;
   letter-spacing: 0.3px;
 }
 
-  /* червоні крапочки Li */
-  .pricing__features {
-    list-style: none;
-    padding-left: 20px;
-  }
+.pricing__price,
+.pricing__price-muted {
+  display: inline-block;
+  margin-bottom: 8px;
+}
 
-  /* червоні крапочки Li */
-  .pricing__feature {
+.pricing__features {
+  list-style: none;
+  padding-left: 20px;
+}
 
-    position: relative;
-  }
+.pricing__feature {
+  position: relative;
+}
 
-  /* червоні крапочки Li */
-  .pricing__feature::before {
-    content: "•";
-    color: red;
-    position: absolute;
-    left: -15px;
-  }
+.pricing__feature::before {
+  content: "•";
+  color: red;
+  position: absolute;
+  left: -15px;
+}
 
-  .pricing__description {
-    color: var(--color-text-muted);
-  }
+.pricing__description {
+  color: var(--color-text-muted);
+}
 
-  ;
+.pricing__list .pricing__price {
+  color: var(--primary-color);
+}
 
-  .pricing__list {
-    .pricing__price {
-      color: var(--primary-color);
-    }
+.pricing__list .pricing__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d33;
+  color: var(--color-text-light);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-    ;
+.pricing__list .pricing__btn:hover {
+  background-color: #b22;
+}
 
-    .pricing__btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #d33;
-      color: var(--color-text-light) ;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    };
 
-    .pricing__btn:hover {
-      background-color: #b22;
-    }
-  }
+.pricing__name {
+  font-size: 20px;
+  margin: 16px 0 8px 0;
+}
+
+.pricing__description {
+  margin-bottom: 16px;
+}
+
+.pricing__features {
+  margin-bottom: 20px;
+}
+
+.pricing__btn {
+  margin-top: 20px;
 }
