@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* outline: 1px solid red; */
 }
 
 :root {
@@ -17,15 +18,16 @@
   --color-text-muted: #b8b8b8; /* Другорядний текст */
   --color-text-light: #ffffff; /* Світлий текст */
   --color-divider: #b8b8b817;
+  --border-color: rgba(255, 255, 255, 0.38);
   scroll-behavior: smooth;
   font-family: "Space Grotesk", sans-serif;
-    /* FONTS */
+  /* FONTS */
   --font-size-small: 15px;
   --line-height-small: 1.2em;
 }
 
 body {
-    background-color: var(--color-bg);
+  background-color: var(--color-bg);
 }
 
 img {
@@ -34,9 +36,9 @@ img {
 }
 
 /* container settings */
-.container {
+.wrapper {
   padding: 0 20px;
-  .container-inner {
+  .container {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
@@ -44,6 +46,15 @@ img {
   }
 }
 /* Buttons */
+.btn {
+  display: flex;
+  .btn__link {
+    line-height: 1em;
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
 .btn--primary {
   .btn__link {
     font-size: 15px;
@@ -54,17 +65,24 @@ img {
     transition: 0.3s;
     border-color: #ffffff;
     &:hover {
-        background-color: #ffffff;
-        color: #0c1020;
-        border-color: #0c1020;
+      background-color: #ffffff;
+      color: #0c1020;
+      border-color: #0c1020;
     }
   }
 }
-.btn {
-    display: flex;
+.btn--secondary {
   .btn__link {
-    line-height: 1em;
+    padding: 15px 30px;
+    background-color: var(--color-accent-secondary);
+    color: var(--color-text-light);
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: 700;
+    transition: 0.3s;
+    &:hover {
+      background-color: var(--color-accent-primary);
+    }
   }
 }

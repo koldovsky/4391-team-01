@@ -1,0 +1,51 @@
+.our-story {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.our-story__tag {
+  color: var(--color-accent-primary);
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+.our-story__brand {
+  color: var(--color-accent-secondary);
+  font-weight: bold;
+}
+
+.our-story__lead {
+  font-size: 18px;
+  margin: 20px 0;
+}
+/* feature cards */
+
+.feature-cardi-list {
+  display: flex;
+  flew-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+}
+
+.feature-card {
+  background-color: var(--colorr-article-bg);
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  min-width: 250px;
+}
+
+.feature-card img {
+  width: 24px;                      /* Розмір іконки */
+  height: auto;                     
+  margin-bottom: 10px;              /* Відступ під іконкою */
+}
+
+.feature-card--blue { border-top: 4px solid var(--color-accent-blue); }
+.feature-card--red { border-top: 4px solid var(--color-accent-red); }
+
+.feature-card__title { font-size: 18px; margin: 10px 0; }
+.feature-card__text { font-size: 14px; color: var(--color-text-secondary); }

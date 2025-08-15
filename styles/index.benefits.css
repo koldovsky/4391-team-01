@@ -1,0 +1,160 @@
+/* Diana Kramarenko */
+
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.benefits__text {
+  padding: 20px;
+  color: var(--color-text-light);
+}
+
+.benefits__title {
+  color: var(--color-accent-primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.benefits__subtitle {
+  color: var(--color-text-light);
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.benefits__description {
+  color: var(--color-text-muted);
+  font-size: 24px;
+}
+
+.benefits__accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  width: 100%;
+}
+
+.accordion__item {
+  background-color: var(--colorr-article-bg);
+  border: 2px solid var(--color-divider);
+  border-radius: 20px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion__title {
+  color: var(--color-text-light);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.accordion__icon {
+  color: var(--color-accent-primary);
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.accordion__content {
+  color: var(--color-text-muted);
+  font-size: 24px;
+  line-height: 1.6;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--color-divider);
+}
+
+.accordion__item[open] .accordion__icon {
+  transform: rotate(45deg);
+}
+
+.accordion__item:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Решта стилів залишаються без змін */
+.photo__carousel {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.carousel__track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel__track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel__item {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.carousel__item img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--color-text-light);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__btn.prev {
+  left: 10px;
+}
+
+.carousel__btn.next {
+  right: 10px;
+}
+
+@media (min-width: 767px) {
+  .carousel__item {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+@media (min-width: 990px) {
+  .benefits {
+    grid-template-columns: 4fr 6fr;
+  }
+  
+  .carousel__item {
+    flex: 0 0 calc(33.333% - 14px);
+  }
+  
+  .accordion__item {
+    padding: 20px;
+  }
+}
