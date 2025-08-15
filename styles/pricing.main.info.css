@@ -10,7 +10,7 @@
 
 .pricing__plan {
   /* border: 1px solid var(--color-text-muted); */
-  border: 1px solid color-mix(in srgb, var(--color-text-muted) 50%, transparent);
+  border: none;
   box-shadow: 0 0 0 1px transparent;
   border-radius: 10px;
   width: calc(100% + 4px);

@@ -15,8 +15,6 @@
     font-size: 34px;
   }
 
-  ;
-
   .pricing-hero__breadcrumb-current {
     color: var(--color-text-muted);
   }
@@ -25,14 +23,7 @@
     content: " ›";
   }
 
-  ;
-
   .pricing-hero__breadcrumb-link {
     color: var(--color-text-light);
   }
-
-  ;
-
-  ;
-
 }
