@@ -116,6 +116,7 @@
         transition: 0.3s;
         img.hero_logo-img {
           max-height: 54px;
+          object-fit: contain;
         }
         &:hover {
           border-color: var(--color-text-light);
