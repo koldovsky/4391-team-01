@@ -18,7 +18,7 @@
   --color-text-muted: #b8b8b8; /* Другорядний текст */
   --color-text-light: #ffffff; /* Світлий текст */
   --color-divider: #b8b8b817;
-  --border-color: rgba(255, 255, 255, 0.38); 
+  --border-color: rgba(255, 255, 255, 0.38);
   scroll-behavior: smooth;
   font-family: "Space Grotesk", sans-serif;
   /* FONTS */
@@ -80,7 +80,7 @@ img {
     font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
-    transition: 0.3s ;
+    transition: 0.3s;
     &:hover {
       background-color: var(--color-accent-primary);
     }
