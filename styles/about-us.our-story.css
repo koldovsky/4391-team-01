@@ -1,42 +1,50 @@
+/* about-us.our-story.partial.css */
+
+/* Блок Our Story */
 .our-story {
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 20px;
+  background-color: var(--color-bg);
+  font-size: 22px !important; /* базовий розмір для мобільних */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
   color: var(--color-text-light);
 }
+
 .our-story__tag {
+  display: block;
   color: var(--color-accent-primary);
-  font-size: 14px;
+  font-size: 22px;
   text-transform: lowercase;
 }
 
 .our-story__brand {
+  font-size: 16px;
   color: var(--color-accent-secondary);
   font-weight: bold;
 }
 
 .our-story__lead {
-  font-size: 18px;
-  margin: 20px 0;
+  font-size: 14px;
+  margin: 15px 0;
 }
-/* feature cards */
 
-.feature-cardi-list {
+/* Feature cards */
+.feature-card-list {
+  
   display: flex;
-  flew-wrap: wrap;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
   list-style: none;
   padding: 0;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .feature-card {
-  background-color: var(--colorr-article-bg);
+  background-color: var(--color-card-bg);
   border-radius: 12px;
-  padding: 20px;
-  flex: 1 1 calc(33.333% - 20px);
+  padding: 15px;
+  flex: 1 1 100%;
   box-sizing: border-box;
-  min-width: 250px;
 }
 
 .feature-card img {
@@ -48,16 +56,61 @@
 .feature-card--blue {
   border-top: 4px solid var(--color-accent-blue);
 }
+
 .feature-card--red {
   border-top: 4px solid var(--color-accent-red);
 }
 
 .feature-card__title {
-  font-size: 18px;
+  font-size: 14px;
   margin: 10px 0;
 }
+
 .feature-card__text {
-  font-size: 14px;
+  font-size: 12px;
   color: var(--color-text-secondary);
 }
 
+/* Акордеон */
+.accordion {
+  max-width: 100%;
+}
+
+/* Десктоп */
+@media (min-width: 768px) {
+  .our-story {
+    font-size: 18px;
+    padding: 40px;
+  }
+
+  .feature-card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .feature-card {
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+  }
+
+  .feature-card__title {
+    font-size: 16px;
+  }
+
+  .feature-card__text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .our-story {
+    font-size: 22px;
+    max-width: 1200px;
+  }
+
+  .our-story__tag,
+  .our-story__brand {
+    font-size: 22px;
+  }
+}
