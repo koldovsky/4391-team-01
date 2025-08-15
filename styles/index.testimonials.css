@@ -45,6 +45,7 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
+      position: relative;
       .testimonials__arrow {
         color: #dbdbde;
         height: 24px;
@@ -69,7 +70,7 @@
         right: 25px;
       }
       .testimonials__card {
-        background-color: var(--colorr-article-bg);
+        background-color: var(--color-article-bg);
         margin: 30px 15px 0px;
         padding: 31px;
         border-radius: 20px;
@@ -117,7 +118,6 @@
     }
   }
   .testimonials__cta {
-    padding-top: 90px;
     min-height: 400px;
     background-image: url(../img/testimonials/cover-bg.svg);
     background-repeat: no-repeat;
@@ -127,8 +127,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 24px;
     .testimonials__cta-content {
+      padding-top: 90px;
+      padding-left: 24px;
+      padding-right: 24px;
       display: flex;
       flex-direction: column;
       .testimonials__cta-highlight {
@@ -152,8 +154,8 @@
       }
       .testimonials__cta-action {
         display: flex;
-        justify-content: flex-start; 
-        margin-top: 35px; 
+        justify-content: flex-start;
+        margin-top: 35px;
         .testimonials__cta-button {
           padding: 15px 30px;
           background-color: var(--color-accent-secondary);

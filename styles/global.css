@@ -11,7 +11,7 @@
 
 :root {
   --color-bg: #0c1020; /* основий  фон*/
-  --colorr-article-bg: #090c18;
+  --color-article-bg: #090c18;
   --color-accent-primary: #3a9dd0; /* Головний бренд-акцент */
   --color-accent-secondary: #cd373a; /* Кнопки та виділення тексту */
   --color-secondary: #0b68b8; /* Другорядний синій */
@@ -35,7 +35,7 @@ img {
 }
 
 /* container settings */
-.container {
+/* .container {
   padding: 0 20px;
   .container-inner {
     display: flex;
@@ -43,7 +43,14 @@ img {
     margin: 0 auto;
     width: 100%;
   }
+} */
+.container{
+  max-width: 1200px;
+  margin: auto;
+  width:100%;
 }
+
+
 /* Buttons */
 .btn--primary {
   .btn__link {
