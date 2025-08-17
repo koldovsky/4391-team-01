@@ -38,22 +38,15 @@ img {
 }
 
 /* container settings */
-/* .container {
+
 .wrapper {
   padding: 0 20px;
-  .container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-  }
-} */
-.container{
+}
+.container {
   max-width: 1200px;
   margin: auto;
-  width:100%;
+  width: 100%;
 }
-
 
 /* Buttons */
 .btn {
