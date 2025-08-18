@@ -1,5 +1,7 @@
 @import url(global.css);
 @import url(global.header-nav.css);
 @import url(pricing.header-hero.css);
-@import url(pricing.pricing.css);
+@import url(pricing.main.info.css);
+@import url(pricing.сustom-plan.partial.css);
+@import url(pricing.free-trial.css);
 @import url(global.footer.css);

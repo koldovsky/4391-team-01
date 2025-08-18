@@ -1,5 +1,8 @@
 /* Header nav */
 .header-nav__wrapper {
+  .container {
+    display: flex;
+  }
   position: absolute;
   width: 100%;
   display: flex;

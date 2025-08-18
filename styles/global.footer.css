@@ -1,31 +1,10 @@
-:root {
-    --color-footer-bg: rgb(10, 14, 27);
-    --color-heading: rgb(255, 255, 255);
-    --color-text: rgb(164, 164, 166);
-    --button-color: #fff;
-    --color-link: #B8B8B8;
-    --color-phone: rgb(58, 157, 208);
-    --color-social-icon-bg: #0B67B8;
-    --color-subscribe-newsletter-bg: rgb(205, 55, 57);
-    --color-subscribe-newsletter-bg-hover: rgb(13, 89, 159);
-    --color-email-link: rgb(184, 184, 184);
-    --color-footer-hover-bg: green
-}
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-footer {
+.footer {
     background-color: var(--color-footer-bg);
-    padding: 20px;
+    padding-top: 20px;
+    /*margin-top: auto; !* This pushes the footer to the bottom *!*/
 }
 
-footer:hover {
+.footer:hover {
     color: var(--color-footer-hover-bg);
     transition: 3s ease;
 }
@@ -109,6 +88,7 @@ footer:hover {
     text-decoration: none;
     text-align: left;
     color: var(--color-email-link);
+    margin-bottom: 10px;
 }
 
 .footer__contact-link--phone {
@@ -116,11 +96,13 @@ footer:hover {
     font-size: 23px;
     color: var(--color-phone);
     text-decoration-color: var(--color-phone);
+    margin-bottom: 15px;
 }
 
 .footer__contact-link--touch {
-    text-decoration: none;
-    padding-top: 5px;
+    padding-top: 20px;
+    text-decoration: underline;
+    color: var(--color-heading)
 }
 
 .footer__underline {
@@ -141,19 +123,22 @@ footer:hover {
     border-radius: 8px;
 }
 
-.footer__input,
 .submit__button {
     display: block;
     width: 65%;
-    color: var(--button-color);
+    color: var(--color-button);
     box-sizing: border-box;
     padding: 11px 19px;
     border-radius: 8px;
 }
 
 .footer__input {
+    padding: 11px 19px;
     border: none;
+    width: 65%;
+    border-radius: 8px;
     margin-bottom: 20px;
+    background-color: var(--color-email-input);
 }
 
 .submit__button {
@@ -167,14 +152,27 @@ footer:hover {
 
 .submit__button:hover {
     background-color: var(--color-subscribe-newsletter-bg-hover);
-    /*transform: scale(1.05);*/
     color: green;
     transform: translate(-10px, -10px);
     animation: shake 1s;
     animation-iteration-count: infinite;
+}
 
-    /*spin 1s linear infinite,*/
+.footer__bar {
+    background-color: var(--color-footer-bar);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+.bar-column {
+    max-width: 50%;
+}
+
+.all-rights-reserved {
+    margin-left: auto;
 }
 
 @keyframes spin {

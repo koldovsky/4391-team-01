@@ -1,4 +1,7 @@
 .home-hero__wrapper {
+  .container {
+    display: flex;
+  }
   background-image: url(../img/testimonials/cover-bg.svg);
   background-position: center;
   background-repeat: no-repeat;
