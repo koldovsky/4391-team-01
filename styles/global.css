@@ -3,89 +3,121 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  /* outline: 1px solid red; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
 }
 
 :root {
-  --color-bg: #0c1020; /* основий  фон*/
-  --color-article-bg: #090c18;
-  --color-accent-primary: #3a9dd0; /* Головний бренд-акцент */
-  --color-accent-secondary: #cd373a; /* Кнопки та виділення тексту */
-  --color-secondary: #0b68b8; /* Другорядний синій */
-  --color-text-muted: #b8b8b8; /* Другорядний текст */
-  --color-text-light: #ffffff; /* Світлий текст */
-  --color-divider: #b8b8b817;
-  --border-color: rgba(255, 255, 255, 0.38);
-  --color-card-bg: #090c18;
+    /* === Global Backgrounds === */
+    --color-bg: #0c1020; /* основий фон */
+    --color-article-bg: #090c18;
+    --color-card-bg: #090c18;
 
-  scroll-behavior: smooth;
-  font-family: "Space Grotesk", sans-serif;
-  /* FONTS */
-  --font-size-small: 15px;
-  --line-height-small: 1.2em;
+    /* === Brand Accents === */
+    --color-accent-primary: #3a9dd0; /* Головний бренд-акцент */
+    --color-accent-secondary: #cd373a; /* Кнопки та виділення тексту */
+    --color-secondary: #0b68b8; /* Другорядний синій */
+
+    /* === Text === */
+    --color-text-light: #ffffff; /* Світлий текст */
+    --color-text-muted: #b8b8b8; /* Другорядний текст */
+
+    /* === Borders & Dividers === */
+    --color-divider: #b8b8b817;
+    --border-color: rgba(255, 255, 255, 0.38);
+
+    /* === Footer Backgrounds === */
+    --color-footer-bg: rgb(10, 14, 27);
+    --color-footer-bar: rgb(9, 12, 24);
+    --color-social-icon-bg: #0B67B8;
+    --color-subscribe-newsletter-bg: rgb(205, 55, 57);
+    --color-subscribe-newsletter-bg-hover: rgb(13, 89, 159);
+    --color-email-input: rgba(255, 255, 255, 0.05);
+
+    /* === Footer Text === */
+    --color-heading: #ffffff;
+    --color-text: rgb(164, 164, 166);
+    --color-link: #B8B8B8;
+    --color-email-link: #b8b8b8;
+
+    /* === Footer Accents === */
+    --color-phone: #3a9dd0;
+    --color-button: #ffffff;
+    --color-footer-hover-bg: green;
+
+    /* === Typography & Misc === */
+    scroll-behavior: smooth;
+    font-family: "Space Grotesk", sans-serif;
+
+    --font-size-small: 15px;
+    --line-height-small: 1.2em;
 }
 
 body {
-  background-color: var(--color-bg);
+    background-color: var(--color-bg);
 }
 
 img {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
 
 /* container settings */
 
 .wrapper {
-  padding: 0 20px;
+    padding: 0 20px;
 }
+
 .container {
-  max-width: 1200px;
-  margin: auto;
-  width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
 }
 
 /* Buttons */
 .btn {
-  display: flex;
-  .btn__link {
-    line-height: 1em;
-    text-decoration: none;
-    font-weight: 700;
-  }
+    display: flex;
+
+    .btn__link {
+        line-height: 1em;
+        text-decoration: none;
+        font-weight: 700;
+    }
 }
 
 .btn--primary {
-  .btn__link {
-    font-size: 15px;
-    color: #ffffff;
-    padding: 12px 19px;
-    border-radius: 5px;
-    border: 1px solid;
-    transition: 0.3s;
-    border-color: #ffffff;
-    &:hover {
-      background-color: #ffffff;
-      color: #0c1020;
-      border-color: #0c1020;
+    .btn__link {
+        font-size: 15px;
+        color: #ffffff;
+        padding: 12px 19px;
+        border-radius: 5px;
+        border: 1px solid;
+        transition: 0.3s;
+        border-color: #ffffff;
+
+        &:hover {
+            background-color: #ffffff;
+            color: #0c1020;
+            border-color: #0c1020;
+        }
     }
-  }
 }
+
 .btn--secondary {
-  .btn__link {
-    padding: 15px 30px;
-    background-color: var(--color-accent-secondary);
-    color: var(--color-text-light);
-    font-size: 17px;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s;
-    &:hover {
-      background-color: var(--color-accent-primary);
+    .btn__link {
+        padding: 15px 30px;
+        background-color: var(--color-accent-secondary);
+        color: var(--color-text-light);
+        font-size: 17px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: var(--color-accent-primary);
+        }
     }
-  }
 }
