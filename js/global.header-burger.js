@@ -1,5 +1,4 @@
 // Get DOM elements
-console.log("test");
 const burger = document.querySelector(".burger-menu");
 const nav = document.querySelector(".header__nav");
 const menuLinks = document.querySelectorAll(".header__nav-link");
