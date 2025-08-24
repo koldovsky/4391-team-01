@@ -1,4 +1,5 @@
 function init() {
+    import("./testimonials.index.js");
     import("./index.footer-easter-egg.js");
 }
 
