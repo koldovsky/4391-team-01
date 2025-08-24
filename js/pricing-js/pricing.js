@@ -1,5 +1,6 @@
 function init() {
     import('./pricing.main.info.partial.js');
+    import('./pricing.custom-plan-list.js');
     import('../global.header-burger.js');
 }
 
