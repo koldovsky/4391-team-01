@@ -1,6 +1,7 @@
 const plansArr = [
     {
         "price": 200,
+        // priceColor: ,
         "planName": "Basic Plan",
         "description": "Perfect for getting started with the cloud.",
         "features": [
