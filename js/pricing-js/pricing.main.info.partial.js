@@ -1,6 +1,7 @@
 const plansArr = [
     {
         "price": 200,
+        "priceColor": "__basic-plan-color",
         "planName": "Basic Plan",
         "description": "Perfect for getting started with the cloud.",
         "features": [
@@ -14,6 +15,7 @@ const plansArr = [
     },
     {
         "price": 500,
+        "priceColor": "__premium-plan-color",
         "planName": "Premium Plan",
         "description": "For those who need more capacities.",
         "features": [
@@ -27,6 +29,7 @@ const plansArr = [
     },
     {
         "price": 800,
+        "priceColor": "__enterprice-plan-color",
         "planName": "Enterprise Plan",
         "description": "For big corporations and high loads.",
         "features": [
@@ -44,7 +47,7 @@ function createPricingPlans(plans) {
     for (const plan of plans) {
         plansList.push(`
     <section class="pricing__plan">
-      <p><span class="pricing__price">${plan.price}</span><span class="pricing__price-muted">/ per month</span></p>
+      <p><span class="pricing__price${plan.priceColor}">${plan.price}</span><span class="pricing__price-muted">/ per month</span></p>
       <h2 class="pricing__name">${plan.planName}</h2>
       <p class="pricing__description">${plan.description}</p>
       <ul class="pricing__features">

@@ -9,9 +9,7 @@
 }
 
 .pricing__plan {
-  /* border: 1px solid var(--color-text-muted); */
-  border: none;
-  box-shadow: 0 0 0 1px transparent;
+  border: 1px solid color-mix(in srgb, var(--color-text-muted) 15%, transparent);
   border-radius: 10px;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
@@ -20,12 +18,25 @@
   right: -2px;
   bottom: -2px;
   padding: 30px;
+  margin-bottom: 50px;
 }
 
-.pricing__price {
+.pricing__price__basic-plan-color {
+  color: var(--color-subscribe-newsletter-bg);
+  font-size: 34px;
   font-weight: 800;
-  font-size: 28px;
-  letter-spacing: 0.3px;
+}
+
+.pricing__price__premium-plan-color {
+  color: var(--color-social-icon-bg);
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.pricing__price__enterprice-plan-color {
+  color: var(--color-accent-primary);
+  font-size: 34px;
+  font-weight: 800;
 }
 
 .pricing__price,
@@ -74,7 +85,6 @@
 .pricing__list .pricing__btn:hover {
   background-color: #b22;
 }
-
 
 .pricing__name {
   font-size: 20px;

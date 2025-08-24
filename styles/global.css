@@ -11,18 +11,24 @@
 
 :root {
     /* === Global Backgrounds === */
-    --color-bg: #0c1020; /* основий фон */
+    --color-bg: #0c1020;
+    /* основий фон */
     --color-article-bg: #090c18;
     --color-card-bg: #090c18;
 
     /* === Brand Accents === */
-    --color-accent-primary: #3a9dd0; /* Головний бренд-акцент */
-    --color-accent-secondary: #cd373a; /* Кнопки та виділення тексту */
-    --color-secondary: #0b68b8; /* Другорядний синій */
+    --color-accent-primary: #3a9dd0;
+    /* Головний бренд-акцент */
+    --color-accent-secondary: #cd373a;
+    /* Кнопки та виділення тексту */
+    --color-secondary: #0b68b8;
+    /* Другорядний синій */
 
     /* === Text === */
-    --color-text-light: #ffffff; /* Світлий текст */
-    --color-text-muted: #b8b8b8; /* Другорядний текст */
+    --color-text-light: #ffffff;
+    /* Світлий текст */
+    --color-text-muted: #b8b8b8;
+    /* Другорядний текст */
 
     /* === Borders & Dividers === */
     --color-divider: #b8b8b817;
