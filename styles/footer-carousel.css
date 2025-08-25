@@ -1,0 +1,19 @@
+.footer__carousel {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    min-height: 400px;
+
+    .slide-carousel__track {
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        gap: 20px;
+
+        .carousel__slide {
+            img {
+                height: 350px;
+            }
+        }
+    }
+}
