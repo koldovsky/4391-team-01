@@ -1,8 +1,8 @@
 function init() {
+    import("./global.header-burger.js");
     import("./testimonials.index.js");
     import("./index.footer-easter-egg.js");
     import("./index.footer-carousel.js");
-    import("./global.header-burger.js");
 }
 
 const totalPartials = document.querySelectorAll(
