@@ -26,7 +26,6 @@ function nextSlide() {
 
 function prevSlide() {
     currentSlideIdx = (currentSlideIdx - 1 + slides.length) % slides.length;
-    console.log(currentSlideIdx);
     showSlide(currentSlideIdx);
 }
 
