@@ -14,8 +14,8 @@ function showSlide(index) {
     track.innerHTML = slides[index];
 
     if (window.matchMedia('(min-width: 768px)').matches) {
-        const secondSlide = (index - 1 + slides.length) % slides.length;
-        track.innerHTML += slides[secondSlide];
+        const nextSlideIdx = (index + 1) % slides.length;
+        track.innerHTML += slides[nextSlideIdx];
     }
 }
 

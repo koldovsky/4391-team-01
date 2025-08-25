@@ -9,11 +9,23 @@
         overflow: hidden;
         justify-content: center;
         gap: 20px;
+        transition: transform 0.5s ease; /* 👈 animation */
 
         .carousel__slide {
             img {
                 height: 350px;
+                flex-shrink: 0;
             }
+        }
+    }
+
+    .carousel__button {
+        opacity: 0.5;
+    / / half transparent transition: opacity 0.3 s ease;
+
+        &:hover {
+            opacity: 1;
+        / / fully visible on hover
         }
     }
 }
