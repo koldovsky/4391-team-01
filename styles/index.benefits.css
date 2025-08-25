@@ -18,6 +18,15 @@
   color: var(--color-accent-primary);
   font-size: 12px;
   font-weight: 700;
+  letter-spacing: 2.4px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.accordion__title::before {
+  content: "●";
+  color: var(--color-accent-primary);
+  margin-right: 8px;
 }
 
 .benefits__subtitle {
@@ -65,7 +74,10 @@
   font-size: 24px;
   transition: transform 0.3s ease;
 }
-
+.accordion__point {
+  list-style: none;
+  
+}
 .accordion__content {
   color: var(--color-text-muted);
   font-size: 24px;
@@ -74,14 +86,24 @@
   padding-top: 15px;
   border-top: 1px solid var(--color-divider);
 }
+/* контент аккордеона скрыт по умолчанию */
+.accordion__content { display: none; }
 
-.accordion__item[open] .accordion__icon {
-  transform: rotate(45deg);
+/* открыт */
+.accordion__content.open { display: block; }
+
+/* иконка: по умолчанию плюс */
+.accordion__icon::before { 
+  content: "+";
+  color: var(--color-text-light); 
 }
 
-.accordion__item:hover {
-  border-color: rgba(255, 255, 255, 0.15);
-}
+
+/* когда айтем открыт — минус */
+.accordion__item.is-open .accordion__icon::before { 
+  content: "–";
+  color: var(--color-text-light); 
+ }
 
 /* Решта стилів залишаються без змін */
 .photo__carousel {
@@ -158,3 +180,4 @@
     padding: 20px;
   }
 }
+/* Diana Kramarenko */
