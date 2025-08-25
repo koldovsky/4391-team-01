@@ -89,13 +89,25 @@
           padding: 30px;
           border-radius: 20px;
           border: 2px solid var(--color-divider);
+          min-height: 370px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 30px;
           .testimonials__quote-icon {
             color: var(--color-accent-secondary);
             height: 24px;
             width: 20px;
           }
           .testimonials__card-content {
-            color: var(--color-text-muted);
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+            justify-content: space-between;
+            min-height: 100%;
+            .testimonials__text{
+              color: var(--color-text-muted);
+              font-size: 17px;
+            }
             .testimonials__author-box {
               margin-top: 20px;
               padding: 7.5px 0;
