@@ -12,6 +12,11 @@ let currentSlideIdx = 0;
 function showSlide(index) {
     const track = document.querySelector(".slide-carousel__track");
     track.innerHTML = slides[index];
+
+    if (window.matchMedia('(min-width: 768px)').matches) {
+        const secondSlide = (index - 1 + slides.length) % slides.length;
+        track.innerHTML += slides[secondSlide];
+    }
 }
 
 function nextSlide() {
