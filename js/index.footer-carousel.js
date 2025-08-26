@@ -1,10 +1,10 @@
 const slides = [
-    '<div class="carousel__slide"><img src="/img/footer-carousel/colorful-sands.jpg" alt="Colorful sands" /></div>',
-    '<div class="carousel__slide"><img src="/img/footer-carousel/rusty-car.jpg" alt="Rusty car" /></div>',
-    '<div class="carousel__slide"><img src="/img/footer-carousel/screaming-face.jpg" alt="Screaming face" /></div>',
-    '<div class="carousel__slide"><img src="/img/footer-carousel/three-toed-sloth.jpg" alt="Three toed sloth" /></div>',
-    '<div class="carousel__slide"><img src="/img/footer-carousel/toilet-paper.jpg" alt="Toilet Paper" /></div>',
-    '<div class="carousel__slide"><img src="/img/footer-carousel/woman-legs-on-car-deck.jpg" alt="Woman legs on car deck.jpg" /></div>',
+    '<div class="carousel__slide"><img src="img/footer-carousel/colorful-sands.jpg" alt="Colorful sands" /></div>',
+    '<div class="carousel__slide"><img src="img/footer-carousel/rusty-car.jpg" alt="Rusty car" /></div>',
+    '<div class="carousel__slide"><img src="img/footer-carousel/screaming-face.jpg" alt="Screaming face" /></div>',
+    '<div class="carousel__slide"><img src="img/footer-carousel/three-toed-sloth.jpg" alt="Three toed sloth" /></div>',
+    '<div class="carousel__slide"><img src="img/footer-carousel/toilet-paper.jpg" alt="Toilet Paper" /></div>',
+    '<div class="carousel__slide"><img src="img/footer-carousel/woman-legs-on-car-deck.jpg" alt="Woman legs on car deck.jpg" /></div>',
 ]
 
 let currentSlideIdx = 0;
