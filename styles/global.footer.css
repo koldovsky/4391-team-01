@@ -7,7 +7,7 @@
 
 .footer:hover {
     color: var(--color-footer-hover-bg);
-    transition: 3s ease;
+    /*transition: 3s ease;*/
 }
 
 .footer__container {
@@ -15,30 +15,32 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1280px;
+    max-width: 1230px;
     gap: 20px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 25px;
 }
 
 .footer__container > div:nth-child(1) {
-    flex: 0 0 calc(35% - 20px);
+    flex: 35;
+    text-wrap: balance;
 }
 
 .footer__container > div:nth-child(2) {
-    flex: 0 0 calc(15% - 20px);
+    flex: 15;
 }
 
 .footer__container > div:nth-child(3) {
-    flex: 0 0 calc(25% - 20px);
+    flex: 15;
 }
 
 .footer__container > div:nth-child(4) {
-    flex: 0 0 calc(25% - 20px);
+    flex: 30;
 }
 
 .footer__column {
     margin: 0;
-    padding: 5px;
 }
 
 .footer__heading {
@@ -82,7 +84,7 @@
 }
 
 .footer__logo {
-    width: 162px;
+    max-width: 162px;
     height: auto;
 }
 
@@ -108,26 +110,26 @@
 }
 
 .footer__underline {
-    max-width: 100%;
+    max-width: 90%;
     height: 20px;
 }
 
 .social__icons {
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
 }
 
 .social_icon {
     width: 32px;
     height: 32px;
-    margin: 0 15px;
+    margin: 0 15px 0 0;
     background-color: var(--color-social-icon-bg);
     border-radius: 8px;
 }
 
 .submit__button {
     display: block;
-    width: 65%;
+    width: 100%;
     color: var(--color-button);
     box-sizing: border-box;
     padding: 11px 19px;
@@ -137,7 +139,7 @@
 .contact-email__input {
     padding: 11px 19px;
     border: none;
-    width: 65%;
+    width: 100%;
     border-radius: 8px;
     margin-bottom: 20px;
     background-color: var(--color-email-input);
@@ -149,7 +151,7 @@
     margin-bottom: 10px;
     text-align: center;
     text-decoration: none;
-    transition: background-color 2s ease-in-out, color 2s ease-in-out, transform 0.2s ease-in-out;
+    /*transition: background-color 2s ease-in-out, color 2s ease-in-out, transform 0.2s ease-in-out;*/
 }
 
 .submit__button:hover {
@@ -254,4 +256,16 @@
         display: flex;
         justify-content: center;
     }
+
+    .contact-email__input {
+        width: 75%;
+        color: var(--color-text)
+    }
+
+    .submit__button {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
