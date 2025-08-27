@@ -6,16 +6,12 @@
 }
 
 .services_cooperation {
-  /* padding: 30px 0 70px; */ /* ❌ у новому інші відступи */
-  padding: 30px 24px 70px; /* ✅ нове */
+  padding: 30px 24px 70px; 
   max-width: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* width: 1270px; */ /* ❌ прибрано */
-  /* height: 320px; */ /* ❌ прибрано */
-  /* min-width: 320px; */ /* ❌ прибрано */
 }
 
 .services-header {
@@ -188,24 +184,12 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  /* justify-content: center; */ /* ❌ прибрано */
-  /* align-items: center; */ /* ❌ прибрано */
-  /* width: 1170px; */ /* ❌ прибрано */
-  /* height: 320px; */ /* ❌ прибрано */
-  /* background-image: url('...'); */ /* ❌ перенесено у .cooperation */
-  /* background-position: center; */ /* ❌ прибрано */
-  /* background-size: cover; */ /* ❌ прибрано */
-  /* background-repeat: no-repeat; */ /* ❌ прибрано */
-  /* border-radius: 12px; */ /* ❌ прибрано */
-  /* z-index: 1; */ /* ❌ прибрано */
 }
 
 .cooperation__title,
 .cooperation__subtitle {
   text-align: center;
   margin: 0;
-  /* position: relative; */ /* ❌ прибрано */
-  /* z-index: 2; */ /* ❌ прибрано */
 }
 
 .cooperation__title {
@@ -221,8 +205,6 @@
   font-weight: 700;
   color: rgb(205, 55, 58);
 }
-
-/* === Медіа-запити (зведені в логічну структуру) === */
 
 /* Планшети */
 @media (max-width: 1024px) {
@@ -292,12 +274,10 @@
 
   .cooperation__title {
     font-size: 32px;
-    /* line-height: 40px; */ /* ❌ у новому закоментовано */
   }
 
   .cooperation__subtitle {
     font-size: 22px;
-    /* line-height: 30px; */ /* ❌ у новому закоментовано */
   }
 }
 
