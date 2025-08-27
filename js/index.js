@@ -1,7 +1,7 @@
 function init() {
     import("./global.header-burger.js");
     import("./features.js");
-    import("./testimonials.index.js");
+    import("./index.testimonails.js");
     import("./index.footer-easter-egg.js");
     import("./index.footer-carousel.js");
     import("./index.footer-newsletter-form.js")
