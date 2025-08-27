@@ -1,0 +1,10 @@
+{
+    "name": "4391-js-fetch",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
