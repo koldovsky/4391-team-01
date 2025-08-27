@@ -22,8 +22,8 @@
             </h3>
             <ul class="column__content footer__links">
                 <li class="footer__link"><a href="about-us.html">About us</a></li>
-                <li class="footer__link"><a href="pricing.html">Services</a></li>
-                <li class="footer__link"><a href="#services">Services</a></li>
+                <li class="footer__link"><a href="pricing.html">Pricing</a></li>
+                <li class="footer__link"><a data-component="hash-link" href="/#services">Services</a></li>
                 <li class="footer__link"><a href="contacts.html">Contacts</a></li>
             </ul>
         </div>
@@ -36,7 +36,7 @@
                     <a class="footer__contact-link--email" href="mailto:cloud.optimizer@email.com">cloud.optimizer@email.com</a>
                 </li>
                 <li class="footer__contact-link footer__contact-link--phone">
-                    <a class="footer__contact-link--phone" href="tel:+1 (234) 567 89 00">+1(234)5678900</a>
+                    <a class="footer__contact-link--phone" href="tel:+1 (234) 567 89 00">+1 (234) 567 89 00</a>
                 </li>
                 <li class="footer__contact-link footer__contact-link--touch">
                     <a class="footer__contact-link--touch" href="contacts.html#contact-form">Stay in Touch</a></li>
@@ -47,14 +47,28 @@
                 Newsletter
             </h3>
             <svg class="footer__underline" xmlns="http://www.w3.org/2000/svg"></svg>
-            <label>
-                <input class="footer__input" id="emailInput" name="email" placeholder="Email" type="email" required>
-            </label>
-            <a class="submit__button" href="#" id="subscribeBtn">Subscribe</a>
+            <div class=newsletter-subscription__container>
+                <form class="newsletter-subscription__form" id="newsletter-subscription"
+                      action="https://formspree.io/f/xovnqegl" method="POST">
+                    <label>
+                        <input class="contact-email__input" id="emailInput" name="email" placeholder="Email"
+                               type="email" required>
+                    </label>
+                    <div id="status"></div>
+                    <button class="submit__button" type="submit" id="subscribeBtn">Subscribe</button>
+                </form>
+            </div>
         </div>
     </div>
     <div class="footer__bar">
-        <div class="bar-column">© Created by "Enter your name"</div>
+        <div class="bar-column">© Created by "TEAM 1"</div>
         <div class="bar-column all-rights-reserved">All rights Reserved</div>
+    </div>
+    <div class="footer__carousel">
+        <button class="carousel__button carousel__button--prev" type="button">←</button>
+        <div class="slide-carousel__track">
+            <!-- Product items will be dynamically inserted here -->
+        </div>
+        <button class="carousel__button carousel__button--next" type="button">→</button>
     </div>
 </footer>

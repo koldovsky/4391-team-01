@@ -6,6 +6,8 @@ function init() {
     import("./index.footer-easter-egg.js");
     import("./index.footer-carousel.js");
     import("./index.footer-newsletter-form.js")
+    import("./index.footer-carousel.js");
+    import("./index.footer-newsletter-form.js")
 }
 
 const totalPartials = document.querySelectorAll(
