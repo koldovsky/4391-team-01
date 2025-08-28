@@ -13,5 +13,5 @@
   }
 
   showNext(); // показати першу
-  setInterval(showNext, 3000); // кожні 3 секунди
+  setInterval(showNext, 1500); // кожні 3 секунди
 })();
