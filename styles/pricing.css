@@ -37,11 +37,9 @@ color-scheme: dark;
 --muted: #475569;
 }
 body {
-margin: 0; font-family: system-ui, sans-serif;
 background: var(--bg); color: var(--text);
 transition: background-color 200ms ease, color 200ms ease;
 }
-.container { max-width: 720px; margin: 48px auto; padding: 0 16px; }
 .card {
 background: var(--card);
 border: 1px solid var(--ring);
