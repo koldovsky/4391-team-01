@@ -8,6 +8,8 @@ function init() {
     import("./index.footer-newsletter-form.js")
     import("./index.footer-carousel.js");
     import("./index.footer-newsletter-form.js")
+    import("./index.steps-gradient.js")
+
 }
 
 const totalPartials = document.querySelectorAll(
