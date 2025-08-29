@@ -205,7 +205,11 @@
 }
 
 .all-rights-reserved {
-    text-align: right;
+    text-align: center;
+}
+
+.created-by {
+    text-align: center;
 }
 
 @keyframes shake {
@@ -248,6 +252,14 @@
 @media (min-width: 768px) {
     .social__icons {
         justify-content: left;
+    }
+
+    .all-rights-reserved {
+        text-align: right;
+    }
+
+    .created-by {
+        text-align: left;
     }
 
     .footer__container {
