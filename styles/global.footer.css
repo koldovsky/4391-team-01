@@ -92,7 +92,7 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .social_icon {
@@ -144,12 +144,15 @@
 }
 
 .all-rights-reserved {
-    margin: 0 auto;
     text-align: right;
 }
 
 /* ----- TABLET (≥768px) ----- */
 @media (min-width: 768px) {
+    .social__icons {
+        justify-content: left;
+    }
+
     .footer__container {
         flex-direction: row;
         flex-wrap: nowrap;
