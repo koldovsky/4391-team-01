@@ -4,7 +4,7 @@
   align-items: center;
   justify-items: center;
   height: 230px;
-  width: 320px;
+  width: 100%;
   padding: 70px;
   background-image: url("../img/pricing-img/heder-hero-fon.svg");
   background-repeat: no-repeat;
@@ -27,4 +27,17 @@
   .pricing-hero__breadcrumb-link {
     color: var(--color-text-light);
   }
+}
+.toggle__label {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 12px;
+}
+.toggle_row {
+  margin-bottom: 16px;
+}
+.card {
+  max-width: 300px;
+  margin-left: 20px;
 }

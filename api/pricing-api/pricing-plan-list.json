@@ -1,0 +1,44 @@
+[
+  {
+    "price": 200,
+    "priceColor": "__basic-plan-color",
+    "planName": "Basic Plan",
+    "description": "Perfect for getting started with the cloud.",
+    "features": [
+      "10 GB of cloud storage",
+      "Basic cloud functions access",
+      "24 / 7 email support",
+      "Up to 20 users",
+      "Collaboration features"
+    ],
+    "button": "Select Plan"
+  },
+  {
+    "price": 500,
+    "priceColor": "__premium-plan-color",
+    "planName": "Premium Plan",
+    "description": "For those who need more capacities.",
+    "features": [
+      "50 GB of cloud storage",
+      "Pro cloud functions access",
+      "24 / 7 email support",
+      "Up to 50 users",
+      "Daily Backups"
+    ],
+    "button": "Select Plan"
+  },
+  {
+    "price": 800,
+    "priceColor": "__enterprice-plan-color",
+    "planName": "Enterprise Plan",
+    "description": "For big corporations and high loads.",
+    "features": [
+      "150 GB of cloud storage",
+      "Basic cloud functions access",
+      "Premium support",
+      "Up to 200 users",
+      "Daily Backups"
+    ],
+    "button": "Select Plan"
+  }
+]

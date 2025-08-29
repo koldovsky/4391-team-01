@@ -1,27 +1,20 @@
 .services {
   padding: 70px 0 40px;
-  max-width: 100%;
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .services_cooperation {
-  padding: 30px 0 70px;
+  padding: 30px 24px 70px; 
   max-width: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 1270px;
-  height: 320px;
-  min-width: 320px;
 }
 
 .services-header {
-  width: 896px;
   margin: 0;
   text-align: center;
 }
@@ -168,26 +161,32 @@
   color: #000;
 }
 
-.cooperation_bg {
+.cooperation {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1170px;
-  height: 320px;
-  background-image: url('https://res2.weblium.site/res/66012f39f72e31000f7c6f92/6606a41f338b27000f9d2237?nowebp');
+  /* фон був у .cooperation_bg, тепер у .cooperation */
+  background-image: url("https://res2.weblium.site/res/66012f39f72e31000f7c6f92/6606a41f338b27000f9d2237?nowebp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 12px;
+  padding: 80px 30px;
+  width: 100%;
+}
+
+.cooperation::before{
+  position: absolute;
+}
+
+.cooperation_bg {
+  display: flex;
+  flex-direction: column;
   gap: 30px;
-  z-index: 1;
 }
 
 .cooperation__title,
 .cooperation__subtitle {
-  position: relative;
-  z-index: 2;
   text-align: center;
   margin: 0;
 }
@@ -205,8 +204,6 @@
   font-weight: 700;
   color: rgb(205, 55, 58);
 }
-
-/* === Медіа-запити (зведені в логічну структуру) === */
 
 /* Планшети */
 @media (max-width: 1024px) {
@@ -276,12 +273,10 @@
 
   .cooperation__title {
     font-size: 32px;
-    line-height: 40px;
   }
 
   .cooperation__subtitle {
     font-size: 22px;
-    line-height: 30px;
   }
 }
 

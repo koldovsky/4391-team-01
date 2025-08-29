@@ -5,3 +5,86 @@
 @import url(pricing.сustom-plan.partial.css);
 @import url(pricing.free-trial.css);
 @import url(global.footer.css);
+:root {
+  --bg: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --card: #f8fafc;
+  --ring: rgba(15, 23, 42, 0.12);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="system"],
+  :root:not([data-theme]) {
+    --bg: #0b1220;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --card: #0f172a;
+    --ring: rgba(148, 163, 184, 0.2);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b1220;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --card: #0f172a;
+  --ring: rgba(148, 163, 184, 0.2);
+  color-scheme: dark;
+}
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--ring);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 20px -10px var(--ring);
+  transition: background-color 200ms ease, border-color 200ms ease;
+}
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--ring);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+:root[data-theme="dark"] .icon-sun {
+  display: block;
+}
+:root[data-theme="dark"] .icon-moon {
+  display: none;
+}
+:root[data-theme="light"] .icon-sun {
+  display: none;
+}
+:root[data-theme="light"] .icon-moon {
+  display: block;
+}
+.badge {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--ring);
+}
+.select {
+  border: 1px solid var(--ring);
+  border-radius: 10px;
+  padding: 8px 12px;
+  background: transparent;
+  color: var(--text);
+}
