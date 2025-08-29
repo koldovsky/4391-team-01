@@ -1,51 +1,78 @@
 const form = document.getElementById("newsletter-subscription");
+const status = document.getElementById("status");
+const emailInput = document.getElementById("emailInput");
+const button = document.getElementById("subscribeBtn");
+const modal = document.getElementById("successModal");
+const closeModalBtn = modal.querySelector(".modal-close");
+const okBtn = modal.querySelector(".ok-btn");
+const closeBtn = modal.querySelector(".modal-close");
+
+// Handle form submit
 form.addEventListener("submit", handleSubmit);
 
 async function handleSubmit(event) {
     event.preventDefault();
 
-    const status = document.getElementById("status"); // Use a dedicated status div
-    const emailInput = document.getElementById("emailInput");
     const emailValue = emailInput.value.trim();
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Email validation
+    status.textContent = "";
+    status.style.color = "";
+
     if (!emailValue) {
+        status.style.color = "red";
         status.textContent = "Email is required.";
         emailInput.focus();
         return;
     }
-
     if (!emailPattern.test(emailValue)) {
+        status.style.color = "red";
         status.textContent = "Please enter a valid email address.";
         emailInput.focus();
         return;
     }
 
-    status.textContent = ""; // Clear previous error
-
-    const data = new FormData(event.target);
+    button.disabled = true;
 
     try {
-        const response = await fetch(event.target.action, {
+        const data = new FormData(form);
+
+        const response = await fetch(form.action, {
             method: form.method,
             body: data,
-            headers: {
-                Accept: "application/json"
-            }
+            headers: {Accept: "application/json"}
         });
 
         if (response.ok) {
             status.style.color = "green";
-            status.innerHTML = "Thanks for your subscription!";
+            // status.textContent = "Thanks for your subscription!";
             form.reset();
+            modal.classList.add("show");
         } else {
             status.style.color = "red";
-            status.innerHTML = "Error submitting the form.";
+            status.textContent = "Error submitting the form.";
         }
     } catch (error) {
         status.style.color = "red";
-        status.innerHTML = "Network error. Please try again.";
+        status.textContent = "Network error. Please try again.";
+    } finally {
+        button.disabled = false;
     }
 }
 
+function closeModal() {
+    modal.classList.remove("show");
+}
+
+// Close on X button
+closeBtn.addEventListener("click", closeModal);
+
+// Close on OK button
+okBtn.addEventListener("click", closeModal);
+
+// Close when clicking outside modal content
+window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        closeModal();
+    }
+});

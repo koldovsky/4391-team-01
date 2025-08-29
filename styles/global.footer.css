@@ -4,7 +4,68 @@
     color: var(--color-footer-text);
 }
 
-/* ----- MOBILE FIRST (default) ----- */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(242, 244, 247, 0.5);
+    display: none; /* hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal.show {
+    display: flex; /* show when .show is added */
+}
+
+.modal-content {
+    background: #0d0f1a;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    width: 320px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-icon {
+    margin-bottom: 1rem;
+}
+
+/*h2 {*/
+/*    font-weight: bold;*/
+/*    margin: 0.5rem 0;*/
+/*}*/
+
+/*p {*/
+/*    margin-bottom: 1.5rem;*/
+/*    color: #ccc;*/
+/*}*/
+
+.ok-btn {
+    background: #c0392b;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 .footer__container {
     display: flex;
     flex-direction: column;
@@ -129,7 +190,7 @@
 
 .submit__button:hover {
     background-color: var(--color-subscribe-newsletter-bg-hover);
-    transform: translate(-4px, -4px);
+    /*transform: translate(-4px, -4px);*/
     animation: shake 1s infinite;
 }
 
@@ -145,6 +206,42 @@
 
 .all-rights-reserved {
     text-align: right;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
 
 /* ----- TABLET (≥768px) ----- */
