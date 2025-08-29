@@ -1,48 +1,47 @@
 const slides = [
-    '<div class="carousel__slide"><img src="img/footer-carousel/colorful-sands.jpg" alt="Colorful sands" /></div>',
-    '<div class="carousel__slide"><img src="img/footer-carousel/rusty-car.jpg" alt="Rusty car" /></div>',
-    '<div class="carousel__slide"><img src="img/footer-carousel/screaming-face.jpg" alt="Screaming face" /></div>',
-    '<div class="carousel__slide"><img src="img/footer-carousel/three-toed-sloth.jpg" alt="Three toed sloth" /></div>',
-    '<div class="carousel__slide"><img src="img/footer-carousel/toilet-paper.jpg" alt="Toilet Paper" /></div>',
-    '<div class="carousel__slide"><img src="img/footer-carousel/woman-legs-on-car-deck.jpg" alt="Woman legs on car deck.jpg" /></div>',
-]
+    "img/footer-carousel/colorful-sands.jpg",
+    "img/footer-carousel/rusty-car.jpg",
+    "img/footer-carousel/screaming-face.jpg",
+    "img/footer-carousel/three-toed-sloth.jpg",
+    "img/footer-carousel/toilet-paper.jpg",
+    "img/footer-carousel/woman-legs-on-car-deck.jpg"
+];
 
 let currentSlideIdx = 0;
+const track = document.querySelector(".slide-carousel__track");
 
-function showSlide(index) {
-    const track = document.querySelector(".slide-carousel__track");
-    track.innerHTML = slides[index];
+// build DOM once
+slides.forEach((src, i) => {
+    const div = document.createElement("div");
+    div.className = "carousel__slide";
+    div.innerHTML = `<img src="${src}" alt="Slide ${i + 1}">`;
+    track.appendChild(div);
+});
 
-    if (window.matchMedia('(min-width: 768px)').matches) {
-        const nextSlideIdx = (index + 1) % slides.length;
-        track.innerHTML += slides[nextSlideIdx];
-        if (window.matchMedia('(min-width: 1200px)').matches) {
-            const nextSlideIdx = (index + 2) % slides.length;
-            track.innerHTML += slides[nextSlideIdx];
-        }
-    }
+function updateCarousel() {
+    const slideWidth = track.querySelector(".carousel__slide").offsetWidth + 20; // +gap
+    track.style.transform = `translateX(-${currentSlideIdx * slideWidth}px)`;
 }
 
 function footerCarouselNextSlide() {
     currentSlideIdx = (currentSlideIdx + 1) % slides.length;
-    showSlide(currentSlideIdx);
+    updateCarousel();
 }
 
 function footerCarouselPrevSlide() {
     currentSlideIdx = (currentSlideIdx - 1 + slides.length) % slides.length;
-    showSlide(currentSlideIdx);
+    updateCarousel();
 }
 
-// show first slide immediately
-showSlide(currentSlideIdx);
+// auto play
 setInterval(footerCarouselNextSlide, 3000);
 
-const btnNext = document.querySelector(".carousel__button--next");
-btnNext.addEventListener("click", footerCarouselNextSlide);
+document.querySelector(".carousel__button--next")
+    .addEventListener("click", footerCarouselNextSlide);
 
-const btnPrev = document.querySelector(".carousel__button--prev");
-btnPrev.addEventListener("click", footerCarouselPrevSlide);
+document.querySelector(".carousel__button--prev")
+    .addEventListener("click", footerCarouselPrevSlide);
 
-window.addEventListener("resize", () => {
-    showSlide(currentSlideIdx)
-});
+// initialize
+updateCarousel();
+window.addEventListener("resize", updateCarousel);
