@@ -1,6 +1,6 @@
 .pricing {
   padding: 90px 30px 0px 30px;
-  color: var(--color-text-light);
+  color: var(--text);
 }
 
 .pricing__price-muted {
@@ -17,8 +17,8 @@
   right: -2px;
   bottom: -2px;
   padding: 30px;
-  margin-bottom: 50px;
-    background-color: var(--color-bg);
+  max-width: 370px;
+  background-color: var(--card);
 }
 
 .pricing__price__basic-plan-color {
@@ -110,21 +110,20 @@
 
 @media (min-width: 500px) {
   .pricing__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;   
-  grid-template-rows: 1fr 1fr;      
-  gap: 30px;
-  width: 100%; 
-  /* max-width: 600px;   */
-  margin: auto;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+    /* max-width: 600px;   */
+    margin: auto;
+    justify-items: center;
   }
-    .pricing__list :nth-child(3){
-  grid-column: 1 / span 2;  
-  width: 50%;
+  .pricing__list :nth-child(3) {
+    grid-column: 1 / span 2;
+    width: 50%;
   }
 }
-
 
 @media (min-width: 1000px) {
   .pricing__list {
@@ -133,7 +132,7 @@
     justify-content: center;
     width: 100%;
   }
-    .pricing__list :nth-child(3){
-  width: 100%;
+  .pricing__list :nth-child(3) {
+    width: 100%;
   }
 }

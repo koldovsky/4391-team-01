@@ -28,3 +28,16 @@
     color: var(--color-text-light);
   }
 }
+.toggle__label {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 12px;
+}
+.toggle_row {
+  margin-bottom: 16px;
+}
+.card {
+  max-width: 300px;
+  margin-left: 20px;
+}

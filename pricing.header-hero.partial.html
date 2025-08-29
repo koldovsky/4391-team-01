@@ -10,14 +10,14 @@
   </div>
 
   <div class="container">
-    <div class="row" style="margin-bottom: 16px">
+    <div class="toggle_row">
       <div class="right">
         <span class="badge" id="mode-label">system</span>
         <button
           id="theme-toggle"
           class="theme-toggle"
-          aria-label="Перемкнути тему"
-          title="Перемкнути тему (L/D)"
+          aria-label="toggle mode"
+          title="toggle mode (L/D)"
         >
           <!-- Moon icon -->
           <svg class="icon icon-moon" viewBox="0 0 24 24" fill="currentColor">
@@ -34,10 +34,8 @@
     </div>
     <div class="card">
       <p></p>
-      <div
-        style="display: flex; gap: 12px; align-items: center; margin-top: 12px"
-      >
-        <label for="theme-select">Режим:</label>
+      <div class="toggle__label">
+        <label for="theme-select">Mode:</label>
         <select id="theme-select" class="select">
           <option value="system">System</option>
           <option value="light">Light</option>
