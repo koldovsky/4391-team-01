@@ -167,6 +167,7 @@
     padding: 11px 19px;
     border: none;
     width: 75%;
+    max-width: 340px;
     border-radius: 8px;
     margin: 0 auto 20px auto;
     display: block;
@@ -177,6 +178,7 @@
 .submit__button {
     display: block;
     width: 50%;
+    max-width: 225px;
     margin: 0 auto 10px auto;
     color: var(--color-button);
     padding: 11px 19px;
