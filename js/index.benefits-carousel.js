@@ -40,3 +40,11 @@ btnPrev.addEventListener("click", prevSlide);
 window.addEventListener('resize', () => {
     showSlide(currentSlideIdx);
 });
+
+document.querySelectorAll('.accordion__item').forEach(item => {
+  item.addEventListener('click', () => {
+    const content = item.querySelector('.accordion__content');
+    item.classList.toggle('is-open');
+    content.classList.toggle('open');
+  });
+});
