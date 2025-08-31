@@ -36,6 +36,7 @@ async function handleSubmit(event) {
 
     try {
         const data = new FormData(form);
+        // modal.classList.add("show");
 
         const response = await fetch(form.action, {
             method: form.method,

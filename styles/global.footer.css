@@ -42,8 +42,16 @@
     cursor: pointer;
 }
 
-.modal-icon {
-    margin-bottom: 1rem;
+.modal__icon {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    filter: invert(24%) sepia(94%) saturate(7479%) hue-rotate(356deg) brightness(93%) contrast(123%);
+    padding-bottom: 12px;
+}
+
+.thank-you {
+    padding: 8px;
 }
 
 /*h2 {*/
@@ -57,6 +65,7 @@
 /*}*/
 
 .ok-btn {
+    margin-top: 12px;
     background: #c0392b;
     color: #fff;
     padding: 0.75rem 2rem;
