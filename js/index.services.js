@@ -1,8 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initImages() {
   const images = document.querySelectorAll(".workloads_img, .migrating_img, .migrations_img, .cloud_img");
 
   images.forEach(img => {
     img.style.transition = "transform 0.3s ease, filter 0.3s ease";
+
+    img.addEventListener("mouseenter", () => {
+      img.style.transform = "scale(1.05)";
+    });
+    img.addEventListener("mouseleave", () => {
+      img.style.transform = "scale(1)";
+    });
   });
 
   let step = 0;
@@ -13,13 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     step++;
   }, 50);
+}
 
-  images.forEach(img => {
-    img.addEventListener("mouseenter", () => {
-      img.style.transform = "scale(1.05)";
-    });
-    img.addEventListener("mouseleave", () => {
-      img.style.transform = "scale(1)";
-    });
-  });
-});
+// Перевіряємо, чи документ уже готовий
+if (document.readyState === "loading") {
+  // якщо ще завантажується, чекаємо події
+  document.addEventListener("DOMContentLoaded", initImages);
+} else {
+  // якщо вже готовий, запускаємо одразу
+  initImages();
+}
