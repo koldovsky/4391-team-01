@@ -295,10 +295,12 @@
 
     .contact-email__input {
         width: 100%;
+        max-width: 100%;
     }
 
     .submit__button {
         width: 100%;
+        max-width: 100%;
     }
 
     .footer__bar {
