@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".workloads_img, .migrating_img, .migrations_img, .cloud_img");
+  const images = document.querySelectorAll(".workloads-assessment.png, .sap-migrations.png, .migrating-workloads.png, .cloud-strategy.png");
 
   images.forEach(img => {
     img.style.transition = "transform 0.3s ease, filter 0.3s ease";
