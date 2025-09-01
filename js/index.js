@@ -1,5 +1,6 @@
 function init() {
     import("./global.header-burger.js");
+    import('./global.sticky-header.js')
     import("./features.js");
     import("./index.services.js");
     import("./index.benefits-carousel.js");
