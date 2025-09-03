@@ -1,14 +1,16 @@
-/* Diana Kramarenko */
-
+/* ===== Benefits Section ===== */
 .benefits {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 20px;
+  align-items: stretch;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 70px 15px 40px;
+  box-sizing: border-box;
 }
 
+/* ===== Left Text Column ===== */
 .benefits__text {
   padding: 20px;
   color: var(--color-text-light);
@@ -23,12 +25,6 @@
   margin: 0;
 }
 
-.accordion__title::before {
-  content: "●";
-  color: var(--color-accent-primary);
-  margin-right: 8px;
-}
-
 .benefits__subtitle {
   color: var(--color-text-light);
   font-size: 42px;
@@ -40,20 +36,28 @@
   font-size: 24px;
 }
 
+/* ===== Accordion Wrapper ===== */
 .benefits__accordion {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 20px;
   width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
+/* ===== Accordion Item ===== */
 .accordion__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--colorr-article-bg);
   border: 2px solid var(--color-divider);
   border-radius: 20px;
   padding: 20px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .accordion__header {
@@ -69,16 +73,30 @@
   font-weight: 700;
 }
 
+.accordion__title::before {
+  content: "●";
+  color: var(--color-accent-primary);
+  margin-right: 8px;
+}
+
 .accordion__icon {
   color: var(--color-accent-primary);
   font-size: 24px;
   transition: transform 0.3s ease;
 }
-.accordion__point {
-  list-style: none;
-  
+
+.accordion__icon::before {
+  content: "+";
+  color: var(--color-text-light);
 }
+
+.accordion__item.is-open .accordion__icon::before {
+  content: "–";
+  color: var(--color-text-light);
+}
+
 .accordion__content {
+  display: none;
   color: var(--color-text-muted);
   font-size: 24px;
   line-height: 1.6;
@@ -86,78 +104,68 @@
   padding-top: 15px;
   border-top: 1px solid var(--color-divider);
 }
-/* контент аккордеона скрыт по умолчанию */
-.accordion__content { display: none; }
 
-/* открыт */
-.accordion__content.open { display: block; }
-
-/* иконка: по умолчанию плюс */
-.accordion__icon::before { 
-  content: "+";
-  color: var(--color-text-light); 
+.accordion__content.open {
+  display: block;
 }
 
+.accordion__point {
+  list-style: none;
+}
 
-/* когда айтем открыт — минус */
-.accordion__item.is-open .accordion__icon::before { 
-  content: "–";
-  color: var(--color-text-light); 
- }
+/* ===== Responsive (Mobile) ===== */
+@media (max-width: 990px) {
+  .benefits {
+    grid-template-columns: 1fr;
+  }
 
-/* Решта стилів залишаються без змін */
+  .benefits__text,
+  .benefits__accordion {
+    width: 100%;
+  }
+}
+/* ===== Carousel Wrapper ===== */
+.photo__carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* відступ між кнопками і слайдами */
+  padding: 0 10px;
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
+
+/* Трек займає всю ширину, але не дає кнопкам залазити */
 .carousel__track {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
+  gap: 20px;
   overflow: hidden;
+  flex: 1;
+}
+
+/* ===== Carousel Slide (адаптивно!) ===== */
+.carousel__slide {
+  flex: 1 1 100%;
+  max-width: 100%;
+  height: 240px; /* або будь-яка інша висота */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
 }
 
 .carousel__slide img {
-  max-height: 218px;
-  padding: 0px 15px;
-  object-fit: contain;
-}
-.photo__carousel {
-  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
+/* Кнопки тепер позиціонуються звичайно */
 .carousel__btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  background: white;
-  border: none;
-  color: black;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.carousel__btn--prev {
-  left: 10px;
-}
-
-.carousel__btn--next {
-  right: 10px;
-}
-.photo__carousel {
-  position: relative;
-}
-
-.carousel__btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
+  position: static;
+  transform: none;
   background: white;
   border: none;
   color: black;
@@ -172,3 +180,44 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   opacity: 30%;
 }
+.accordion__title {
+  background: linear-gradient(90deg, red, blue);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: background-position 0.3s ease;
+}
+.accordion__title {
+  background: linear-gradient(90deg, red, blue);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: background-position 0.3s ease;
+}
+
+.accordion__title {
+  color: var(--color-text-light); /* звичайний колір */
+  transition: color 0.3s ease;
+}
+
+/* Анімація лише при наведенні на весь .accordion__item */
+.accordion__item:hover .accordion__title {
+  animation: pulseColor 1.2s infinite alternate;
+}
+
+/* 🔁 Keyframes: колір пульсує між червоним і синім */
+@keyframes pulseColor {
+  0% {
+    color: var(--color-accent-secondary);
+  }
+  100% {
+    color: var(--color-secondary);
+  }
+@media (hover: hover) and (pointer: fine) {
+  .accordion__item {
+    cursor: pointer;
+  }
+}
+

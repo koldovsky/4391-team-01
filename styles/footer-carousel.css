@@ -1,31 +1,50 @@
 .footer__carousel {
+    position: relative; /* so buttons can be absolutely positioned */
     padding: 20px;
-    display: grid;
-    grid-template-columns: 100px 1fr 100px;
     min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .slide-carousel__track {
-        display: flex;
-        overflow: hidden;
-        justify-content: center;
-        gap: 20px;
-        transition: transform 0.5s ease; /* 👈 animation */
+.slide-carousel__track {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    will-change: transform;
+}
 
-        .carousel__slide {
-            img {
-                height: 350px;
-                flex-shrink: 0;
-            }
-        }
-    }
+.carousel__slide img {
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 12px;
+}
 
-    .carousel__button {
-        opacity: 0.5;
-    / / half transparent transition: opacity 0.3 s ease;
+/* Buttons on top of images */
+.carousel__button {
+    position: absolute;
+    top: 50%; /* center vertically */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    z-index: 2; /* on top of images */
+}
 
-        &:hover {
-            opacity: 1;
-        / / fully visible on hover
-        }
-    }
+.carousel__button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel__button--prev {
+    left: 10px; /* stick to left */
+}
+
+.carousel__button--next {
+    right: 10px; /* stick to right */
 }

@@ -41,9 +41,11 @@
     --color-subscribe-newsletter-bg: rgb(205, 55, 57);
     --color-subscribe-newsletter-bg-hover: rgb(13, 89, 159);
     --color-email-input: rgba(255, 255, 255, 0.05);
+    --color-footer-modal-bg: rgba(242, 244, 247, 0.5);
 
     /* === Footer Text === */
     --color-heading: #ffffff;
+    --color-footer-text: rgb(184, 184, 184);
     --color-text: rgb(164, 164, 166);
     --color-link: #B8B8B8;
     --color-email-link: #b8b8b8;
@@ -51,7 +53,6 @@
     /* === Footer Accents === */
     --color-phone: #3a9dd0;
     --color-button: #ffffff;
-    --color-footer-hover-bg: green;
 
     /* === Typography & Misc === */
     scroll-behavior: smooth;

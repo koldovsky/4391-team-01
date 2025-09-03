@@ -1,26 +1,32 @@
 <!--Bohdan-->
 <section class="our-story">
-  <h2 class="our-story__head">
-    <span class="our-story__tag">- our story -</span>
-  </h2>
+  <div class="hero">
+    <h2 class="our-story__head">
+      <span class="our-story__tag">- our story -</span>
+    </h2>
 
-  <div class="our-story__heading">
-    <p class="our-story__lead">
-      <span class="our-story__brand">Optimizer</span> is a leading cloud
-      services company providing managed applications and cloud services for
-      companies in diverse industries that strive to decrease their operational
-      costs by relocating IT infrastructure to the cloud. The security and
-      flexibility advantages make moving to cloud solutions one of the best
-      strategic IT leads any business can take to become more responsive,
-      competitive, and profitable.
-    </p>
+    <div class="our-story__heading">
+      <p class="our-story__text">
+        <span class="our-story__brand">Optimizer</span>
+        is a leading cloud services company providing managed applications and
+        cloud services for companies in diverse industries that strive to
+        decrease their operational costs by relocating IT infrastructure to the
+        cloud.
+      </p>
+
+      <p class="our-story__text our-story__text--secondary">
+        The security and flexibility advantages make moving to cloud solutions
+        one of the best strategic IT leads any business can take to become more
+        responsive, competitive, and profitable.
+      </p>
+    </div>
   </div>
-
   <ul class="feature-card-list">
     <li class="feature-card feature-card--blue">
       <img
         src="img/about-us/our-story/check-mark--blue.svg"
         alt="blue check mark"
+        class="about-us__icon"
       />
       <h3 class="feature-card__title">On-demand Self-service</h3>
       <p class="feature-card__text">
@@ -33,6 +39,7 @@
       <img
         src="img/about-us/our-story/check-mark--red.svg"
         alt="icon red check mark"
+        class="about-us__icon"
       />
       <h3 class="feature-card__title">Compatibility</h3>
       <p class="feature-card__text">
@@ -45,6 +52,7 @@
       <img
         src="img/about-us/our-story/check-mark--blue.svg"
         alt="icon blue check mark"
+        class="about-us__icon"
       />
       <h3 class="feature-card__title">Better Teamwork</h3>
       <p class="feature-card__text">
@@ -57,6 +65,7 @@
       <img
         src="img/about-us/our-story/check-mark--blue.svg"
         alt="icon blue check mark"
+        class="about-us__icon"
       />
       <h3 class="feature-card__title">Security</h3>
       <p class="feature-card__text">
@@ -69,6 +78,7 @@
       <img
         src="img/about-us/our-story/check-mark--red.svg"
         alt="icon red check mark"
+        class="about-us__icon"
       />
       <h3 class="feature-card__title">Elasticity</h3>
       <p class="feature-card__text">
@@ -81,6 +91,7 @@
       <img
         src="img/about-us/our-story/check-mark--blue.svg"
         alt="icon blue check mark"
+        class="about-us__icon"
       />
 
       <h3 class="feature-card__title">Reliability</h3>
@@ -98,46 +109,50 @@
         alt="photo with men"
       />
     </figure>
-    <p class="process-overview__intro">
-      If you are interested in our services, here's how the whole journey looks
-      like. Our managers will take care of your business and guide it through
-      the process.
-    </p>
-    <ol class="process-overview__steps">
-      <li class="process-overview__step">Assessment</li>
-      <li class="process-overview__step">Migration</li>
-      <li class="process-overview__step">Integration</li>
-      <li class="process-overview__step">Optimization</li>
-    </ol>
+    <div class="process-overview__text">
+      <p class="process-overview__intro">
+        If you are interested in our services, here's how the whole journey
+        looks like. Our managers will take care of your business and guide it
+        through the process.
+      </p>
+      <ol class="process-overview__steps">
+        <li class="process-overview__step">Assessment</li>
+        <li class="process-overview__step">Migration</li>
+        <li class="process-overview__step">Integration</li>
+        <li class="process-overview__step">Optimization</li>
+      </ol>
+    </div>
   </div>
 
   <hr class="our-story__divider" />
 
   <div class="clouds-types">
-    <h3 class="clouds-types__heading">Types of Cloud Computing:</h3>
-    <ul class="accordion-list">
-      <li class="accordion">
-        <img src="img/about-us/our-story/accordions-logo1.svg" alt="logo" />
-        <p>Software as a Service <span>(SaaS)</span></p>
-        <button class="accordion-button">Read More</button>
-      </li>
+  <h3 class="clouds-types__heading">Types of Cloud Computing:</h3>
+  <div class="clouds-types__block">
+    <div class="clouds-types__card">
+      <img src="img/about-us/our-story/accordions-logo1.svg" alt="logo" class="clouds-types__icon"/>
+      <p>Software as a Service <span>(SaaS)</span></p>
+      <a href="#" class="clouds-types__button">Read More</a>
+    </div>
 
-      <li class="accordion">
-        <img src="img/about-us/our-story/accordions-logo2.svg" alt="logo" />
-        <p>Software as a Service <span>(SaaS)</span></p>
-        <button class="accordion-button">Read More</button>
-      </li>
+    <div class="clouds-types__card">
+      <img src="img/about-us/our-story/accordions-logo2.svg" alt="logo" class="clouds-types__icon"/>
+      <p>Platform as a Service <span>(PaaS)</span></p>
+      <a href="#" class="clouds-types__button">Read More</a>
+    </div>
 
-      <li class="accordion">
-        <img src="img/about-us/our-story/accordion-logo3.svg" alt="logo" />
-        <p>Software as a Service <span>(SaaS)</span></p>
-        <button class="accordion-button">Read More</button>
-      </li>
-    </ul>
-    <article class="cta-card">
-      <h4 class="cta-card__title">Want to Work With Us?</h4>
-      <p class="cta-card__text">Get access to the free trial now!</p>
-      <a class="cta-card__link" href="contacts.html"><p>Let's Go!</p></a>
-    </article>
+    <div class="clouds-types__card">
+      <img src="img/about-us/our-story/accordion-logo3.svg" alt="logo" class="clouds-types__icon"/>
+      <p>Infrastructure as a Service <span>(IaaS)</span></p>
+      <a href="#" class="clouds-types__button">Read More</a>
+    </div>
+
+    <div class="clouds-types__card">
+      <h4>Want to Work With Us?</h4>
+      <p>Get access to the free trial now!</p>
+      <a href="contacts.html" class="clouds-types__button">Let's Go!</a>
+    </div>
   </div>
+</div>
+
 </section>

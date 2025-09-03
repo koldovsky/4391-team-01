@@ -6,12 +6,16 @@ body.no-scroll {
   .container {
     display: flex;
   }
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 999;
   width: 100%;
   display: flex;
   background: rgba(12, 16, 32, 0.56);
+  transition: 0.5s;
+  &.hidden-bar {
+    transform: translateY(-110%);
+  }
 
   .container {
     align-items: center;
@@ -98,9 +102,11 @@ body.no-scroll {
   }
 
   .header__burger-menu {
+    flex-direction: column;
+    display: flex;
+    height: 24px;
+    justify-content: center;
     z-index: 111;
-    display: block;
-    z-index: 101;
     position: relative;
     width: 24px;
     @media (min-width: 1025px) {
