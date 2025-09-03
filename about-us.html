@@ -13,6 +13,13 @@
     ></script>
   </head>
   <body>
+    <header class="header">
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></div>
+    </header>
     <main>
       <section
         data-hx-trigger="load"
@@ -20,5 +27,12 @@
         data-hx-get="about-us.our-story.partial.html"
       ></section>
     </main>
+    <footer class="footer">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></nav>
+    </footer>
   </body>
 </html>
