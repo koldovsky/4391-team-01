@@ -5,6 +5,7 @@ function init() {
     import("./index.services.js");
     import("./index.benefits-carousel.js");
     import("./index.testimonials.js");
+    import("./index.promo-video.js");
     import("./index.footer-easter-egg.js");
     import("./index.footer-carousel.js");
     import("./index.footer-newsletter-form.js")
