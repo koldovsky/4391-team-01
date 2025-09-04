@@ -155,8 +155,8 @@
 
         &:hover {
           transform: scale(1.1);
-          filter: drop-shadow(4px 8px 16px var(--color-accent-primary))
-            drop-shadow(-4px -8px 16px var(--color-accent-secondary));
+          filter: drop-shadow(8px 8px 16px var(--color-accent-primary))
+            drop-shadow(-8px -8px 16px var(--color-accent-secondary));
         }
       }
     }

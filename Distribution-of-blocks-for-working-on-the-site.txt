@@ -7,7 +7,7 @@ Khrystyna Lashkevych    services
 Ivan Bykov              steps
 Tetiana Koss            about us
 Vadym Mikheiev          contacts
-Roman Krekhovetskyi     testimonials
+Roman Krekhovetskyi     testimonials cta promo-video latest-news
 Ihor Movchan            faq
 Stas Fesenko            -
 Viacheslav Krasin       -
