@@ -3,19 +3,21 @@
 /* Блок Our Story */
 .our-story {
   max-width: 1200px;
-  margin: auto; /* Початковий варіант */
+  margin: auto;
   padding: 0 24px 140px 24px;
   background-color: var(--color-bg);
-  font-size: 22px; /* Повернуто оригінальний розмір */
+  font-size: 22px;
   color: var(--color-text-light);
   font-weight: 700;
 }
 
-.hero {
+.our-story__hero {
   padding-top: 100px;
   display: grid;
+}
 
-  @media (min-width: 769px) {
+@media (min-width: 769px) {
+  .our-story__hero {
     grid-template-columns: 40% 60%;
   }
 }
@@ -25,58 +27,60 @@
   color: var(--color-accent-primary);
   letter-spacing: 2.4px;
   text-transform: lowercase;
-  padding: 0 0 !important; /* Повернуто оригінальний padding з !important */
 }
 
 .our-story__heading {
   padding-bottom: 70px;
   margin: 20px 0;
-  background-color: var(--color-bg);
-  font-size: 22px;
-  color: var(--color-text-light);
 }
 
 .our-story__text {
-  line-height: 29.92px; /* Повернуто оригінальне значення */
+  line-height: 1.35;
   margin: 20px 0;
+  font-size: 22px;
+  color: var(--color-text-light);
 }
 
 .our-story__brand {
   color: var(--color-accent-secondary);
 }
 
+/* Feature cards */
 .feature-card-list {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding: 70px 0;
   display: grid;
-  flex-wrap: wrap;
-  list-style: none;
   gap: 20px;
-  @media (min-width: 480px) {
+  list-style: none;
+}
+
+@media (min-width: 480px) {
+  .feature-card-list {
     grid-template-columns: 1fr 1fr;
   }
-  @media (min-width: 990px) {
+}
+
+@media (min-width: 990px) {
+  .feature-card-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.feature-card__title {
-  font-size: 22px;
-}
 .feature-card {
-  /* Повернуто початковий напрямок */
-  margin: 0 6px;
-  margin-bottom: 6px;
+  margin: 0 6px 6px;
   gap: 20px;
   padding: 30px;
   border-radius: 20px;
-  background-color: #0a0e1b; /* Залишено тільки одне правильне значення */
+  background-color: rgb(9, 12, 24);;
   border: 2px solid #ffffff14;
 }
 
-.about-us__icon {
-  max-width: 20px; /* Повернуто max-width */
-  max-height: 20px; /* Повернуто max-height */
+.feature-card__icon {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.feature-card__title {
+  font-size: 22px;
 }
 
 .feature-card__text {
@@ -86,7 +90,7 @@
   line-height: 1.5;
 }
 
-/* Основний стиль (дві колонки) */
+/* Process overview */
 .process-overview {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -97,14 +101,12 @@
   margin: auto;
 }
 
-/* Картинка */
 .process-overview__figure img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-/* Контейнер для тексту і списку */
 .process-overview__text {
   display: grid;
   gap: 30px;
@@ -114,66 +116,62 @@
   line-height: 1.5;
 }
 
-/* Параграф опису */
 .process-overview__intro {
   font-size: 17px;
   line-height: 1.5;
   color: rgb(184, 184, 184);
 }
 
-/* Нумерований список */
+/* Steps with leading zero */
 .process-overview__steps {
+  counter-reset: steps;
   display: grid;
   gap: 15px;
   padding: 0;
   margin: 0;
-  font-size: 38px;
+  list-style: none;
 }
 
-/* Кожен крок */
 .process-overview__step {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  counter-increment: steps;
+  color: var(--color-text-light);
   font-size: 38px;
   font-weight: 700;
-  list-style-type: decimal;
+  display: flex;
+  align-items: center;
 }
 
-/* Адаптив для екранів менше 765px */
+.process-overview__step::before {
+  content: counter(steps, decimal-leading-zero)".";
+  font-size: 22px;
+  font-weight: 700;
+ color: #b8b8b8;
+  width: 50px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
 @media (max-width: 765px) {
   .process-overview {
-    grid-template-columns: 1fr; /* одна колонка */
-    gap: 30px; /* зменшуємо відстань між блоками */
-    padding: 50px 20px; /* менші падінги для мобільних */
-  }
-
-  .process-overview__text {
-    width: 100%; /* текст займає всю ширину */
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 50px 20px;
   }
 
   .process-overview__steps {
-    font-size: 28px; /* трохи менший розмір на мобільних */
-  }
-
-  .process-overview__step {
     font-size: 28px;
   }
 }
 
+/* Divider */
 .divider {
-  width: 100%; /* Лінія тягнеться на всю ширину */
-  height: 1px; /* Товщина лінії */
-  background-color: rgba(255, 255, 255, 0.05); /* Колір і прозорість */
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.05);
   margin: 20px 0;
 }
 
-.our-story__divider {
-  color: #b8b8b8;
-  font-size: 17px;
-  font-weight: 400;
-}
-
+/* Clouds types */
 .clouds-types {
   max-width: 1200px;
   margin: 0 auto;
@@ -187,53 +185,12 @@
   color: var(--color-text-light);
 }
 
-/* Грід */
 .clouds-types__block {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-/* Базовий стиль картки */
-.clouds-types__card {
-  font-size: 24px;
-  padding: 30px;
-  border-radius: 20px;
-  background-color: var(--color-bg);
-  border: 2px solid #ffffff14;
-  color: var(--color-text-light);
-}
-
-/* Текст у картках */
-.clouds-types__card p {
-  margin: 15px 0;
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-.clouds-types__card-link {
-  font-size: 24px;
-  padding: 30px;
-  border-radius: 20px;
-  background-color: #0a0e1b;
-  border: 2px solid #ffffff14;
-  color: var(--color-text-light);
-}
-
-/* Кнопка */
-.clouds-types__button {
-  fontp-size: 14px;
-  max-width: 200px;
-  display: inline-block;
-  padding: 7px 15px;
-  border-radius: 10px;
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  margin-top: 15px;
-}
-
-/* Адаптив */
 @media (max-width: 990px) {
   .clouds-types__block {
     grid-template-columns: repeat(2, 1fr);
@@ -245,13 +202,23 @@
     grid-template-columns: 1fr;
   }
 }
+
+.clouds-types__card {
+  font-size: 24px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--color-bg);
+  border: 2px solid #ffffff14;
+  color: var(--color-text-light);
+}
+
 .clouds-types__icon {
   max-width: 70px;
   max-height: 70px;
 }
 
 .clouds-types__card-title {
-  font-size: 24px !important;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 15px;
   color: var(--color-text-light);
@@ -268,34 +235,43 @@
 }
 
 .clouds-types__button {
-  color: var(--color-text-light);
   cursor: pointer;
   padding: 14px;
+  font-size: 18px;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
-  justify-content: center;
+  border-radius: 10px;
+  font-weight: 700;
+  color: var(--color-text-light);
+  background: transparent;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .clouds-types__button:hover {
   background-color: var(--color-accent-secondary);
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .clouds-types__panel {
   padding: 20px 0;
   color: #b8b8b8;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.5;
-
   display: none;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.clouds-types__card-link {
+  font-size: 24px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #0a0e1b;
+  border: 2px solid #ffffff14;
+  color: var(--color-text-light);
 }
 
 .clouds-types__card-link-text {
@@ -306,20 +282,26 @@
 
 .clouds-types__card-link-content {
   padding-top: 15px;
-  padding-bottom: 30%;
-
+  padding-bottom: 15%;
   color: #b8b8b8;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.5;
 }
+
 .clouds-types__link {
   display: grid;
   font-size: 15.5px;
-  text-align: center;
+  
   padding: 10px 20px;
   color: var(--color-text-light);
   text-decoration: none;
   background-color: var(--color-accent-secondary);
   border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.clouds-types__link:hover {
+  background-color: var(--color-accent-primary);
+  color: #fff;
 }
