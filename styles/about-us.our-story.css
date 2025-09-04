@@ -65,7 +65,8 @@
 }
 .feature-card {
   /* Повернуто початковий напрямок */
-
+  margin: 0 6px;
+  margin-bottom: 6px;
   gap: 20px;
   padding: 30px;
   border-radius: 20px;
@@ -136,6 +137,7 @@
   gap: 15px;
   font-size: 38px;
   font-weight: 700;
+  list-style-type: decimal;
 }
 
 /* Адаптив для екранів менше 765px */
@@ -157,6 +159,13 @@
   .process-overview__step {
     font-size: 28px;
   }
+}
+
+.divider {
+  width: 100%; /* Лінія тягнеться на всю ширину */
+  height: 1px; /* Товщина лінії */
+  background-color: rgba(255, 255, 255, 0.05); /* Колір і прозорість */
+  margin: 20px 0;
 }
 
 .our-story__divider {
@@ -187,9 +196,10 @@
 
 /* Базовий стиль картки */
 .clouds-types__card {
+  font-size: 24px;
   padding: 30px;
   border-radius: 20px;
-  background-color: #0a0e1b;
+  background-color: var(--color-bg);
   border: 2px solid #ffffff14;
   color: var(--color-text-light);
 }
@@ -201,10 +211,21 @@
   line-height: 1.4;
 }
 
+.clouds-types__card-link {
+  font-size: 24px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #0a0e1b;
+  border: 2px solid #ffffff14;
+  color: var(--color-text-light);
+}
+
 /* Кнопка */
 .clouds-types__button {
+  fontp-size: 14px;
+  max-width: 200px;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 7px 15px;
   border-radius: 10px;
   color: #fff;
   font-weight: 700;
@@ -227,4 +248,78 @@
 .clouds-types__icon {
   max-width: 70px;
   max-height: 70px;
+}
+
+.clouds-types__card-title {
+  font-size: 24px !important;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--color-text-light);
+}
+
+.clouds-types__card-title-type-IaaS {
+  color: #3a9dd0;
+}
+.clouds-types__card-title-type-PaaS {
+  color: #0b68b8;
+}
+.clouds-types__card-title-type-SaaS {
+  color: #cd373a;
+}
+
+.clouds-types__button {
+  color: var(--color-text-light);
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  justify-content: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.clouds-types__button:hover {
+  background-color: var(--color-accent-secondary);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.clouds-types__panel {
+  padding: 20px 0;
+  color: #b8b8b8;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.clouds-types__card-link-text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.clouds-types__card-link-content {
+  padding-top: 15px;
+  padding-bottom: 30%;
+
+  color: #b8b8b8;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.clouds-types__link {
+  display: grid;
+  font-size: 15.5px;
+  text-align: center;
+  padding: 10px 20px;
+  color: var(--color-text-light);
+  text-decoration: none;
+  background-color: var(--color-accent-secondary);
+  border-radius: 5px;
 }
